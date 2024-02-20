@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(188, 206, 251);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    margin-left: 10px;
+}
+
+.main-titre{
+    margin-bottom: 50px;
+}
+
+i{
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.bi{
+    font-size: 40px;
+    margin-right: 10px;
+    color: black;
+}
+
+.date{
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top: 100px;
+    margin-right: 10px;
+}
+
+#date_time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    animation: clignote 2s infinite;
+}
+
+@keyframes clignote{
+    0% {
+        background: linear-gradient(to left top, yellow, green);
+        opacity: 0.8;
+    }
+    50% {
+        background: linear-gradient(to left top, rgb(231, 58, 15), rgb(5, 97, 235));
+        opacity: 0.5;
+    }
+    100% {
+        background: linear-gradient(to left top, yellow, green);
+        opacity: 0.8;
+    }
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.mode, .account{
+    height: 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.commun{
+    padding: 0 0 20px 0;
+    margin: 0 15% 5px 15%;
+    scroll-margin-top: 100px;
+}
+
+.section_accueil{
+    padding-top: 100px;
+    height: auto;
+}
+
+.presentation{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.interaction_profil{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.interaction_profil:hover{
+    color: rgb(31, 110, 214);
+    cursor: pointer;
+}
+
+.textes_profil, p, cite, .texte2_info{
+    font-size: 17px;
+    font-family: "Playfair Display", serif;
+}
+
+.photo_profil{
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.presentation p{
+    float: right;
+}
+
+.info{
+    display: block;
+    font-family: "Playfair Display", serif;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #ffc74d;
+    margin: 10px 0 20px 0;
+    box-shadow: 2px 2px 2px 2px;
+
+}
+
+.bi-info-circle{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 21.5px;
+    font-family: "Protest Strike", static;
+    margin-bottom: 10px;
+}
+
+.bi-info-circle span{
+    font-size: 27px;
+}
+
+.pdf_logo{
+    width: 80px;
+}
+
+.parties:hover{
+    animation: rotation_anim 2s;
+}
+
+@keyframes rotation_anim {
+    25%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: -10deg;
+    }
+}
+
+.section_parcours{
+    height: auto;
+}
+
+.fichiers{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(300px, 500px));
+}
+
+.fichier_container{
+    float: left;
+    padding: 25px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.parties{
+    display: flex;
+    margin: 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+.fichier_avis{
+    text-align: center;
+}
+
+.section_competences{
+    height: auto;
+}
+
+table{
+    margin: 0px auto; /*pour centrer le tableau*/
+    margin-top: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    overflow-x: hidden;
+}
+
+tr:hover{
+    background-color: rgb(158, 158, 52);
+    transition: 0.8s ease-in-out;
+}
+
+td{
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.club_info{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.img_morpion, .img_dm{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: -10px -10px 20px 2px;
+}
+
+.text_club_info, .text_dm{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.section_parcours, .section_competences, .section_reseaux_sociaux{
+    margin-top: 50px;
+}
+
+.table_reseaux{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container_img_reseaux{
+    width: 250px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    background-color: none;
+}
+
+.container_img_reseaux:hover{
+        animation: degrade 3s infinite;
+}
+
+@keyframes degrade {
+    0%{
+        background: linear-gradient(to bottom right, #ff6a00,#ffc74d);
+    }
+    50%{
+        background: linear-gradient(to top left, #ff9500,#ff6a00);
+    }
+    100%{
+        background: linear-gradient(to bottom right, #ff9500,#ff6a00);
+    }
+}
+
+footer{
+    background-color: rgba(188, 206, 251 , 0.253);
+    height: 100px;
+    padding-top: 35px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    #date_time{
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .presentation{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo_profil{
+        margin-bottom: 20px;
+    }
+
+    .table_competences{
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .fichiers{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, minmax(300px, 500px));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        margin: 0px;
+    }
+    
+    nav a{
+        font-size: 15px;
+    }
+
+    .bi{
+        font-size: 30px;
+    }
+
+    .bi-person-circle{
+        display: none;
+    }
+
+    .bi-info-circle{
+        font-size: 20.5px;
+    }
+}

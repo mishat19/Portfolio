@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="icon" href="./images/moi.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script src="interaction.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#id_accueil">Accueil</a>
+                <a href="#id_parcours">Parcours</a>
+                <a href="#id_competences">Compétences</a>
+                <a href="#id_reseaux">Contacts</a>
+            </nav>
+            <!-- <a href="#">Parcoursup</a> -->
+            <div>
+                <i onclick="change_mode()" class="bi bi-brightness-high-fill" id="toggleDark"></i>
+                <i onclick="account()" class="bi bi-person-circle"></i>
+            </div>
+        </header>
+
+        <section class="date">
+            <div id="date_time">00:00:00</div>
+            <script>
+                const currentTime = document.getElementById("date_time");
+                setInterval(() => {
+                    let date = new Date();
+                    let time = date.toLocaleTimeString();
+                    // console.log(time);
+                    currentTime.innerText = time;  // Output: 14:26:49
+                }, 1000);
+            </script>
+        </section>
+
+        <section class="section_accueil" id="id_accueil">
+            <div class="commun accueil">
+                <h2 class="main-titre">Bienvenue sur mon site personnel !</h2>
+                <div class="presentation">
+                    <img class="photo_profil" src="images/moi.jpg" alt="Moi">
+                    <p class="textes_profil">Je m'appelle Mathis et j'ai 17 ans. Je suis étudiant au Lycée Guy Mollet d'Arras avec pour spécialités suivies : les <span class="interaction_profil" onclick="details_spes()"><b>Maths, NSI et HGGSP</b></span> avant d'abandonner cette dernière en Terminale.
+                    Je souhaiterais intégrer une formation d'informatique dans le but de d'acquérir de nouvelles compétences.</p>
+                </div><br>
+                <div class="description">
+                    <div class="info" style="border: 1px solid black; box-shadow: 2px 2px 2px 2px black;" id="hidden_details">
+                        <i class="bi bi-info-circle"><span class="info-text">INFO :</span></i>
+                        <div class="texte2_info" style="color: black;">
+                            <p>- Je n'ai pas pris la spécialité Phyisque-Chimie comme beaucoup tout simplement du fait que je voulais me concentrer principalement sur les maths où je connaissais mes défauts.
+                                C'est pour cela que j'ai préféré prendre la spécialité HGGSP très enrichissante culturellement et qui développe cependant la réflexion également.
+                            </p><br>
+                            <p>- J'ai eu cette année quelques difficultés avec les mathématiques, mais comme a pu le souligner mon professeur, j'ai essayé de faire les efforts nécessaire afin de réhausser mes résultats mais cela n'a pas suffit à mes
+                                attentes qui étaient plus élevées. Mais je ne relâcherai pas mes efforts car les mathématiques restent essentiels.
+                            </p>
+                        </div><br><br>
+                    </div>
+                    <p class="textes_profil">Cela fait quelques années que je m'intéresse à l'informatique et c'est principalement la programmation qui m'a attiré notamment axé sur le web. J'ai l'ambition d'élargir mes compétences dans ce domaine mais aussi dans celui
+                        des applications web, mobile mais aussi de logiciels; chaque domaine me passionne beaucoup.</p><br>
+                    <p class="textes_profil">C'est donc pour cela que je souhaite intégrer une école d'informatique car les formations proposées me permettront de m'améliorer en plus de mon travail personnel et également de découvrir de nouvelles compétences afin d'arriver,
+                        au bout des années de fomation, à pouvoir travailler dans n'importe quel domaine et pouvoir m'épanouir dans mon métier.</p><br><br>
+                    <p class="textes_profil">J'ai rejoins dans mon lycée le Club Informatique que j'ai fais pendant 2 ans. J'ai pu apprendre de nombreuses choses dont la réalisation de jeux en ligne comme un Morpion (voir section Compétences) qui mélange
+                        différents langages de programmation et des connaissances particulières comme le système de jeu en local.
+                    </p>
+                    </div>
+            </div>
+        </section>
+        
+        <section class="section_parcours">
+            <div class="commun mon_parcours" id="id_parcours">
+                <h2>Mes différents bulletins :</h2>
+                <div class="fichiers">
+                    <div class="fichier_container">
+                        <h4>Bulletin 1er trimestre - 2022-2023</h4>
+                        <div class="parties">
+                            <div class="left">
+                                <a target="_blank" href="./images/bulletin1.pdf"><img class="pdf_logo" src="./images/pdf_icon.png" alt="logo_pdf"></a>
+                            </div>
+                            <div class="right">
+                                <cite class="fichier_avis">Une moyenne générale dont je n'ai pas été fier malgré le fait qu'elle reste bonne, mais les résultats restaient trop limite en maths et NSI pour moi.</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fichier_container">
+                        <h4>Bulletin 2ème trimestre - 2022-2023</h4>
+                        <div class="parties">
+                            <div class="left">
+                                <a target="_blank" href="./images/bulletin2.pdf"><img class="pdf_logo" src="./images/pdf_icon.png" alt="logo_pdf"></a>
+                            </div>
+                            <div class="right">
+                                <cite class="fichier_avis">Un deuxième trimestre qui m'a permis de remonter une descente que je n'avais pas aimé. Une remontée en maths qui m'avait motivé.</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fichier_container">
+                        <h4>Bulletin 3ème trimestre - 2022-2023</h4>
+                        <div class="parties">
+                            <div class="left">
+                                <a target="_blank" href="./images/bulletin3.pdf"><img class="pdf_logo" src="./images/pdf_icon.png" alt="logo_pdf"></a>
+                            </div>
+                            <div class="right">
+                                <cite class="fichier_avis">Dernier trimestre de Première avec une baisse en maths mais un professeur qui m'aura fait aimer les maths. Cependant la NSI rattrape le tir.</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fichier_container ">
+                        <h4>Bulletin 1er Semestre - 2023-2024</h4>
+                        <div class="parties">
+                            <div class="left">
+                                <a target="_blank" href="./images/bulletin4.pdf"><img class="pdf_logo" src="./images/pdf_icon.png" alt="logo_pdf"></a>
+                            </div>
+                            <div class="right">
+                                <cite class="fichier_avis">Un semestre plombé par les maths (coefficientés 16). Une matière que je n'aurais pas réussi à remonter plus à contre coeur malgré mes efforts. <br><b>(bulletin avec notes non disponible)</b></cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_competences">
+            <div class="commun competences" id="id_competences">
+                <h2>Mes compétences :</h2>
+                <article class="table_comptetences" style="overflow-x: auto;">
+                    <table>
+                        <tr>
+                            <td><b>Compétences</b></td>
+                            <td><b>Niveaux</b></td>
+                            <td><b>Détails</b></td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>AVANCE</td>
+                            <td><cite>Maîtrise du balisage (div, articles, section,...), des balises (p, img, a, table, span,...), des différences entre les class et id pour le style, compréhension de la structure d'un site quelconque</cite></td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>AVANCE</td>
+                            <td><cite>Maîtrise des positionnements et displays, du responsive, utilisation d'animations/transitions simples, des propriétés liés aux textes, images et vidéos et des boîtes de chaque élément (padding, margin,...)</cite></td>
+                        </tr>
+                        <tr>
+                            <td>JAVASCRIPT</td>
+                            <td>AVANCE</td>
+                            <td><cite>Affichage/disparition d'une partie d'un site, mode sombre, utilisation des différents types de fonctions (linéaires,...), changement d'un style, remplacement d'un texte, connaissances des modules (date,...), etc</cite></td>
+                        </tr>
+                        <tr>
+                            <td>SQL/PHP</td>
+                            <td>DEBUTANT</td>
+                            <td><cite>Création et utilisation de base de données, modification avec PHP ou Python, ajout de ces données sur un site internet, etc</cite></td>
+                        </tr>
+                        <tr>
+                            <td>PYTHON</td>
+                            <td>AVANCE</td>
+                            <td><cite>Compréhension des fonctions dynamiques et récursives, savoir utiliser des classes et leurs instances, les graphes ainsi que les Piles et Files, différents programmes de tri, etc</cite></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article class="club_info">
+                    <img class="img_morpion" style="border: 1px solid black; box-shadow: 10px 10px 20px 2px black;" src="./images/morpion.png" alt="Morpion">
+                    <p class="text_club_info">Voici un exemple de ce que l'on a pu réaliser au <b>Club Informatique</b> l'année dernière avec mon professeur. On y retrouve principalement du <b>HTML et surtout du PHP (et SQL)</b>
+                    avec lesquels nous avons créé ce Morpion qui est un <b>jeu en local</b> (avec 2 ordinateurs). Nous n'avons pas développé la partie CSS tout simplement du fait que ce n'était pas le but premier du projet.</p>
+                </article>
+
+                <article class="dm_noel">
+                    <img class="img_dm" style="border: 1px solid black; box-shadow: 10px 10px 20px 2px black;" src="./images/entrepot_tout.jpg" alt="Morpion">
+                    <p class="text_dm">Nous deviens également pour les vacances de Noël de cette année, réaliser un site internet permettant de <b>gérer un stockage</b>, pour ce projet j'ai arboré une devanture graphique simple et très peu avancé
+                        mais le but était que cela ressemble plus ou moins à un entrepôt (malgré les couleurs que je n'ai pas assorties entres-elles par ailleurs) afin de pouvoir me tester sur mes connaissances en web et également montrer au professeur ce que je savais faire sans pour autant passer
+                        trop de temps dessus. Le site est fait de ce fait en <b>HTML, CSS, Javascript et PHP/SQL</b>; Javascript du fait que la partie en bleu n'apparaît pas directement, il faut cliquer sur l'un des boutons du dessus.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section_reseaux_sociaux">
+            <div class="commun reseaux" id="id_reseaux">
+                <h2>Mes différents réseaux :</h2>
+                <div class="table_reseaux">
+                    <a href="https://www.facebook.com/profile.php?id=100077341367729" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/SpidarStudio" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/twitter.png" alt="X"></a>
+                    <a href="https://steamcommunity.com/id/Mathus19/" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/steam.png" alt="Steam"></a>
+                    <a href="https://discord.com/users/749258702107967599" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/discord.png" alt="Discord"></a>
+                    <a href="mailto:mathis.brongniart@gmail.com" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/gmail.png" alt="Gmail"></a>
+                    <a href="https://github.com/Mathus06" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/github.png" alt="Github"></a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Tous droits réservés - &copy;<a href="#">Mathis Brongniart</a> - 2024</p>
+        </footer>
+    </body>
+</html>
