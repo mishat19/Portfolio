@@ -13,6 +13,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <script src="interaction.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZH2X01PVR"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-2ZH2X01PVR');
+        </script>
     </head>
     <body>
         <header>
@@ -163,17 +172,35 @@
                     </table>
                 </article>
 
-                <article class="club_info">
-                    <img class="img_morpion" style="border: 1px solid black; box-shadow: 10px 10px 20px 2px black;" src="./images/morpion.png" alt="Morpion">
-                    <p class="text_club_info">Voici un exemple de ce que l'on a pu réaliser au <b>Club Informatique</b> l'année dernière avec mon professeur. On y retrouve principalement du <b>HTML et surtout du PHP (et SQL)</b>
-                    avec lesquels nous avons créé ce Morpion qui est un <b>jeu en local</b> (avec 2 ordinateurs). Nous n'avons pas développé la partie CSS tout simplement du fait que ce n'était pas le but premier du projet.</p>
-                </article>
-
-                <article class="dm_noel">
-                    <img class="img_dm" style="border: 1px solid black; box-shadow: 10px 10px 20px 2px black;" src="./images/entrepot_tout.jpg" alt="Morpion">
-                    <p class="text_dm">Nous deviens également pour les vacances de Noël de cette année, réaliser un site internet permettant de <b>gérer un stockage</b>, pour ce projet j'ai arboré une devanture graphique simple et très peu avancé
+                <article class="projets_ecole">
+                    <div class="projets scolaire">
+                        <a href="#" class="projets_scolaires">Projets Scolaires</a>
+                    </div>
+                    <div class="morpion">
+                        <img class="img_morpion" style="border: 1px solid black; box-shadow: 10px 10px 20px 2px black;" src="./images/morpion.png" alt="Morpion">
+                        <p class="text_club_info">Voici un exemple de ce que l'on a pu réaliser au <b>Club Informatique</b> l'année dernière avec mon professeur. On y retrouve principalement du <b>HTML et surtout du PHP (et SQL)</b>
+                        avec lesquels nous avons créé ce Morpion qui est un <b>jeu en local</b> (avec 2 ordinateurs). Nous n'avons pas développé la partie CSS tout simplement du fait que ce n'était pas le but premier du projet.</p>
+                    </div>
+                    <div class="dm_noel">
+                        <img class="img_dm" style="border: 1px solid black; box-shadow: 10px 10px 20px 2px black;" src="./images/entrepot_tout.jpg" alt="Morpion">
+                        <p class="text_dm">Nous deviens également pour les vacances de Noël de cette année, réaliser un site internet permettant de <b>gérer un stockage</b>, pour ce projet j'ai arboré une devanture graphique simple et très peu avancé
                         mais le but était que cela ressemble plus ou moins à un entrepôt (malgré les couleurs que je n'ai pas assorties entres-elles par ailleurs) afin de pouvoir me tester sur mes connaissances en web et également montrer au professeur ce que je savais faire sans pour autant passer
                         trop de temps dessus. Le site est fait de ce fait en <b>HTML, CSS, Javascript et PHP/SQL</b>; Javascript du fait que la partie en bleu n'apparaît pas directement, il faut cliquer sur l'un des boutons du dessus.</p>
+                    </div>
+                </article>
+                
+                <article class="projets_maison">
+                    <div class="projets perso">
+                        <a href="#" class="projets_perso">Projets Personnels</a>
+                    </div>
+                    <div class="carte_gratter">
+                        <iframe class="import" src="carte_gratter.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" >
+                        </iframe>
+                        <p class="text_club_info">Cette idée de projet fondée en <b>HTML, CSS et Javascript</b> m'est venu de cette <a class="lien_video" target="_blank" href="https://www.tiktok.com/@lemondefr/video/7346266317248367904?is_from_webapp=1&sender_device=pc&web_id=7346319920127690272">vidéo</a> (<- Cliquez pour l'ouvrir)
+                        du journal <b>Le Monde</b> sur Tiktok dans laquelle une programmeuse du journal a créé ce <b>simulateur</b> du célèbre jeu à gratter <b>Cash</b>. N'ayant que le visuel j'ai tenté de reproduire au mieu l'aspect graphique et le code fait par cette programmeuse afin d'avoir ce résultat
+                        qui se rapproche de ce qu'elle a pu faire. Pour cela j'ai utilité la bibliothèque <b>ChartJS</b> pour le graphique, ce qui m'a permis de comprendre les mécanismes pour en faire. <br><br>
+                        Durant ce petit projet qui m'a pris un weekend, j'ai' rencontré peu de problèmes, mais j'ai dû demander de l'aide pour importer en temps réel les données sur le graphique et régler un problème de statistiques.</p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -182,7 +209,7 @@
             <div class="commun reseaux" id="id_reseaux">
                 <h2>Mes différents réseaux :</h2>
                 <div class="table_reseaux">
-                    <a href="https://www.facebook.com/profile.php?id=100077341367729" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/in/mathis-brongniart-44715b279/" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/linkedin.png" alt="Facebook"></a>
                     <a href="https://twitter.com/SpidarStudio" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/twitter.png" alt="X"></a>
                     <a href="https://steamcommunity.com/id/Mathus19/" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/steam.png" alt="Steam"></a>
                     <a href="https://discord.com/users/749258702107967599" target="_blank" class="lien_img"><img class="container_img_reseaux" src="./images/discord.png" alt="Discord"></a>

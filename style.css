@@ -2,9 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 body{
+    position: relative;
+    z-index: 100;
     background-color: white;
 }
 
@@ -17,6 +20,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 }
 
 nav{
@@ -237,7 +241,31 @@ td{
     padding: 30px;
 }
 
-.club_info{
+.projets{
+    display: grid;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.projets_scolaires, .projets_perso{
+    background: linear-gradient(to left top, yellow, green);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.projets a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.projets_scolaires:hover, .projets_perso:hover{
+    background-color: beige;
+}
+
+.projets_ecole, .projets_maison{
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -250,10 +278,34 @@ td{
     box-shadow: -10px -10px 20px 2px;
 }
 
+.img_morpion:not(nav):hover, .img_dm:not(nav):hover {
+    transform: scale(1.01);
+    z-index: 0;
+}
+
 .text_club_info, .text_dm{
     padding: 10px;
     margin-top: 10px;
     text-align: center;
+}
+
+iframe{
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.import{
+    width: 100%;
+    height: 800px;
+}
+
+.lien_video{
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: black !important;
+    font-weight: bold;
 }
 
 .section_parcours, .section_competences, .section_reseaux_sociaux{
