@@ -3,12 +3,9 @@
     margin: 0;
     padding: 0;
     z-index: 1;
-    z-index: 1;
 }
 
 body{
-    position: relative;
-    z-index: 100;
     position: relative;
     z-index: 100;
     background-color: white;
@@ -253,7 +250,39 @@ td{
     padding: 30px;
 }
 
-.club_info{
+.projets{
+    display: grid;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.categories{
+    margin-bottom: 50px;
+}
+
+.categories:last-child{
+    margin-bottom: 0px;
+}
+
+.projets_scolaires, .projets_perso{
+    background: linear-gradient(to left top, yellow, green);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.projets a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.projets_scolaires:hover, .projets_perso:hover{
+    background-color: beige;
+}
+
+.projets_ecole, .projets_maison{
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -266,10 +295,60 @@ td{
     box-shadow: -10px -10px 20px 2px;
 }
 
+.img_morpion{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 900px;
+}
+
+.img_morpion:not(nav):hover, .img_dm:not(nav):hover {
+    transform: scale(1.01);
+    z-index: 0;
+}
+
 .text_club_info, .text_dm{
     padding: 10px;
     margin-top: 10px;
     text-align: center;
+}
+
+.dm_noel img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-height: 700px;
+    max-width: 900px;
+}
+
+iframe{
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.import{
+    display: block;
+    width: 90%;
+    margin: auto;
+    min-height: 800px;
+    max-width: 900px;
+}
+
+.lien_video{
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: black !important;
+    font-weight: bold;
+}
+
+.projet_sudoku img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-height: 500px;
+    max-width: 500px;
 }
 
 .section_parcours, .section_competences, .section_reseaux_sociaux{
@@ -318,24 +397,6 @@ footer{
     font-size: 20px;
 }
 
-@media screen and (max-width: 2560px) {
-    .carte_gratter_jeu{
-        margin: 0 400px;
-    }
-}
-
-@media screen and (max-width: 2100px) {
-    .carte_gratter_jeu{
-        margin: 0 170px;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .carte_gratter_jeu{
-        margin: 0 70px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     #date_time{
         width: 50px;
@@ -368,10 +429,6 @@ footer{
         justify-content: center;
         grid-template-columns: repeat(1, minmax(300px, 500px));
     }
-
-    .carte_gratter_jeu{
-        margin: 0;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -393,9 +450,5 @@ footer{
 
     .bi-info-circle{
         font-size: 20.5px;
-    }
-
-    .carte_gratter_jeu{
-        margin: 0;
     }
 }
