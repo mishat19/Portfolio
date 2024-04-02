@@ -289,13 +289,17 @@ td{
     text-align: center;
 }
 
+
+
 iframe{
     border-radius: 50px;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .import{
-    width: 100%;
+    display: block;
+    width: 90%;
+    margin: auto;
     height: 800px;
 }
 
@@ -354,6 +358,12 @@ footer{
     font-size: 20px;
 }
 
+@media screen and (max-width: 2400px) {
+    .carte_gratter_jeu{
+        margin: 0 150px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     #date_time{
         width: 50px;
@@ -386,6 +396,10 @@ footer{
         justify-content: center;
         grid-template-columns: repeat(1, minmax(300px, 500px));
     }
+
+    .carte_gratter_jeu{
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -407,5 +421,9 @@ footer{
 
     .bi-info-circle{
         font-size: 20.5px;
+    }
+
+    .carte_gratter_jeu{
+        margin: 0;
     }
 }
