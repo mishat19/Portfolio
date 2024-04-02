@@ -3,9 +3,12 @@
     margin: 0;
     padding: 0;
     z-index: 1;
+    z-index: 1;
 }
 
 body{
+    position: relative;
+    z-index: 100;
     position: relative;
     z-index: 100;
     background-color: white;
@@ -25,6 +28,15 @@ header{
 
 nav{
     margin-left: 10px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+:is(.section_accueil, .section_parcours, .section_competences, .section_reseaux_sociaux) p, .lien_video{
+    margin-top: 20px !important;
+    font-size: 20px !important;
 }
 
 .main-titre{
@@ -241,31 +253,7 @@ td{
     padding: 30px;
 }
 
-.projets{
-    display: grid;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.projets_scolaires, .projets_perso{
-    background: linear-gradient(to left top, yellow, green);
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 50px;
-    text-transform: uppercase;
-}
-
-.projets a{
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-.projets_scolaires:hover, .projets_perso:hover{
-    background-color: beige;
-}
-
-.projets_ecole, .projets_maison{
+.club_info{
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -278,36 +266,10 @@ td{
     box-shadow: -10px -10px 20px 2px;
 }
 
-.img_morpion:not(nav):hover, .img_dm:not(nav):hover {
-    transform: scale(1.01);
-    z-index: 0;
-}
-
 .text_club_info, .text_dm{
     padding: 10px;
     margin-top: 10px;
     text-align: center;
-}
-
-iframe{
-    border-radius: 50px;
-    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-.import{
-    display: block;
-    width: 90%;
-    margin: auto;
-    height: 800px;
-}
-
-.lien_video{
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
-    text-decoration: underline;
-    color: black !important;
-    font-weight: bold;
 }
 
 .section_parcours, .section_competences, .section_reseaux_sociaux{
@@ -374,7 +336,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     #date_time{
         width: 50px;
         height: 50px;
