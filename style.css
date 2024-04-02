@@ -289,8 +289,6 @@ td{
     text-align: center;
 }
 
-
-
 iframe{
     border-radius: 50px;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
@@ -358,9 +356,9 @@ footer{
     font-size: 20px;
 }
 
-@media screen and (max-width: 2400px) {
+@media screen and (max-width: 2560px) {
     .carte_gratter_jeu{
-        margin: 0 150px;
+        margin: 0 160px;
     }
 }
 
