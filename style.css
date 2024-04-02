@@ -358,7 +358,19 @@ footer{
 
 @media screen and (max-width: 2560px) {
     .carte_gratter_jeu{
+        margin: 0 400px;
+    }
+}
+
+@media screen and (max-width: 2100px) {
+    .carte_gratter_jeu{
         margin: 0 170px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .carte_gratter_jeu{
+        margin: 0 70px;
     }
 }
 
