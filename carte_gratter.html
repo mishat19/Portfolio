@@ -171,6 +171,36 @@
                     height: 850px;
                 }
             } */
+
+            @media screen and (max-width: 400px){
+                .carte_fond{
+                    min-height: 900px;
+                }
+
+                .elements_partie_superieure .image_decorative_partie_superieure{
+                    margin: 0 auto;
+                    width: 90%;
+                }
+
+                .elements_partie_superieure .vide, .texte_prix_partie_superieure{
+                    display: none;
+                }
+
+                .elements_partie_moyenne_superieure{
+                    display: grid;
+                    gap: 10px;
+                    grid-template-columns: 1fr;
+                }
+
+                .elements_partie_moyenne_inferieure{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+
+                #graphique{
+                    width: 85%;
+                }
+            }
         </style>
         <script>
 

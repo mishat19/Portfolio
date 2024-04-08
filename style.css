@@ -159,7 +159,6 @@ a:hover{
     background-color: #ffc74d;
     margin: 10px 0 20px 0;
     box-shadow: 2px 2px 2px 2px;
-
 }
 
 .bi-info-circle{
@@ -450,5 +449,22 @@ footer{
 
     .bi-info-circle{
         font-size: 20.5px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .import{
+        display: block;
+        width: 90%;
+        margin: auto;
+        min-height: 650px;
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px){
+    .import{
+        min-height: 760px;
+        max-width: 900px;
     }
 }
