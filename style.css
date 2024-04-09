@@ -350,6 +350,11 @@ iframe{
     max-width: 500px;
 }
 
+.img_messagerie{
+    max-height: 600px !important;
+    max-width: 300px;
+}
+
 .section_parcours, .section_competences, .section_reseaux_sociaux{
     margin-top: 50px;
 }
