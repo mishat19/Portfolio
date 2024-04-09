@@ -31,6 +31,19 @@ h2{
     font-size: 30px;
 }
 
+.section_flash{
+    margin-top: 40px;
+}
+
+.section_flash .info{
+    display: flex;
+    align-items: center;
+}
+
+.section_flash .info .flash-text{
+    font-size: 20px;
+}
+
 :is(.section_accueil, .section_parcours, .section_competences, .section_reseaux_sociaux) p, .lien_video{
     margin-top: 20px !important;
     font-size: 20px !important;
@@ -240,13 +253,20 @@ table{
 }
 
 tr:hover{
-    background-color: rgb(158, 158, 52);
+    background-color: rgb(11, 165, 31);
     transition: 0.8s ease-in-out;
 }
 
 td{
     border: 1px solid black;
     padding: 30px;
+}
+
+.section_competences .commun .table_comptetences p{
+    text-align: center;
+    margin-top: 50px !important;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
 }
 
 .projets{
@@ -352,7 +372,7 @@ iframe{
 
 .img_messagerie{
     max-height: 600px !important;
-    max-width: 300px;
+    max-width: 400px !important;
 }
 
 .section_parcours, .section_competences, .section_reseaux_sociaux{
