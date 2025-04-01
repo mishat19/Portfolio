@@ -1,3 +1,5 @@
+/*Styles généraux*/
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,4 +13,79 @@ body{
     background-size: cover;
     background-attachment: fixed; /* Fixe l'image pour un effet de fond fixe (optionnel) */
     width: 100%;
+    background-color: #E9EFEC;
+}
+
+.logo-reseau{
+    width: 35px;
+}
+
+/*Styles navbar - début*/
+
+nav{
+    position: fixed;
+    background-color: #6A9C89;
+    width: 100%;
+    height: 100px;
+}
+
+nav .nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2%;
+    height: 100%;
+}
+
+nav .nav-logo{
+    width: 25%;
+}
+
+nav .logo-tete{
+    width: 70px;
+}
+
+/*Styles navbar - milieu*/
+
+nav .nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+nav .nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-menu ul li{
+    list-style: none;
+}
+
+nav .nav-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/*Styles navbar - fin*/
+
+nav .nav-contacts{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+}
+
+nav .nav-contacts ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-contacts ul li{
+    list-style: none;
+    margin-left: 10px;
 }
