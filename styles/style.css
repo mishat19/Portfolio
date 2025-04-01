@@ -125,12 +125,27 @@ footer .container-footer .presentation-footer{
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
 }
 
 .presentation-footer .article-logo .logo{
     width: 200px;
+}
+
+.presentation-footer .presentation{
+    margin: 20px 0 0 20px;
+}
+
+.presentation-footer .presentation h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.presentation-footer .presentation .texte-presentation{
+    font-size: 1.2rem;
+    font-weight: lighter;
 }
 
 footer .presentation-footer p{
