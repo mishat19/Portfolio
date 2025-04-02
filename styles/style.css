@@ -333,6 +333,10 @@ footer .copyright{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    margin-top: 150px;
+}
+
+.container-loading-index{
     margin-top: 0;
 }
 
