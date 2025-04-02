@@ -22,7 +22,7 @@ body{
 
 /*Styles navbar - début*/
 
-nav{
+nav {
     position: fixed;
     background-color: #6A9C89;
     width: 100%;
@@ -96,34 +96,98 @@ nav .nav-contacts ul li{
 /*Styles main*/
 
 main{
-    margin-top: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
-main .container-main{
+/*STYLES SECTION DEMMARAGE*/
+
+main .demarrage-section {
+    position: relative;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    width: 100%;
+    background-color: #6A9C89;
+}
+
+main .demarrage-section .demarrage-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 80%;
+    height: 100%;
+    margin: 90px auto 0 auto;
+    color: #fff;
+}
+
+.texte-container .titre{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.texte-container .contraste{
+    color: #16423C;
+}
+
+.texte-container .texte{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.texte-container .button-apropos{
+    text-decoration: none;
+    color: #fff;
+    background-color: #16423C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.demarrage-container .image-container .demarrage-image{
+    width: 300px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+
+/*STYLES SECTION PRESENTATION*/
+
+main .presentation-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    width: 80%;
+    height: 100%;
+    margin: 20px 2% 0 2%;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.presentation-section .introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 50px;
 }
 
-.logo-loading {
-    animation: rotate 5s linear infinite;
+.presentation-section .introduction .introduction-logo-tete{
+    width: 150px;
+    margin-right: 20px;
 }
 
-
-main .container-main .texte-loading{
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
+.presentation-section .introduction p{
+    font-size: 25px;
 }
 
 /*Styles footer*/
@@ -137,6 +201,7 @@ footer{
     height: auto;
     margin-top: 70px;
     padding: 10px 0;
+    color: #E0E0E0;
 }
 
 footer .container-footer {
@@ -144,12 +209,13 @@ footer .container-footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     /*height: 100%;*/
-    padding: 0 2%;
+    padding: 20px 2% 0 2%;
 }
 
 footer a{
-    color: black;
+    color: #E0E0E0;
     text-decoration: underline;
 }
 
@@ -159,7 +225,7 @@ footer .container-footer .presentation-footer{
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
 }
 
@@ -168,7 +234,7 @@ footer .container-footer .presentation-footer{
 }
 
 .presentation-footer .presentation{
-    margin: 20px 0 0 20px;
+    margin-left: 20px;
 }
 
 .presentation-footer .presentation h2{
@@ -242,7 +308,46 @@ footer .container-footer .informations-footer {
 /*Styles footer - fin*/
 
 footer .copyright{
-    align-self: flex-end;
     font-size: 1.2rem;
     font-weight: 600;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+/*CHARGMEENT STYLES*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.logo-loading {
+    width: 200px;
+    animation: rotate 5s linear infinite;
+}
+
+.container-main .loading-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main .loading-container .sous-titre{
+    font-size: 20px;
 }
