@@ -332,15 +332,22 @@ footer .copyright{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
     font-size: 2rem;
-}
-
-.container-loading-index{
     margin-top: 0;
 }
 
 .logo-loading {
     width: 200px;
     animation: rotate 5s linear infinite;
+}
+
+.container-main .loading-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main .loading-container .sous-titre{
+    font-size: 20px;
 }
