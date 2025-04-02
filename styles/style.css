@@ -117,12 +117,17 @@ main .demarrage-section .demarrage-container{
     width: 80%;
     height: 100%;
     margin: 90px auto 0 auto;
+    color: #fff;
 }
 
 .texte-container .titre{
     font-size: 3.5rem;
     font-weight: 600;
     margin-bottom: 30px;
+}
+
+.texte-container .contraste{
+    color: #16423C;
 }
 
 .texte-container .texte{
@@ -184,6 +189,7 @@ footer{
     height: auto;
     margin-top: 70px;
     padding: 10px 0;
+    color: #E9EFEC;
 }
 
 footer .container-footer {
@@ -197,7 +203,7 @@ footer .container-footer {
 }
 
 footer a{
-    color: black;
+    color: #E9EFEC;
     text-decoration: underline;
 }
 
@@ -292,4 +298,5 @@ footer .container-footer .informations-footer {
 footer .copyright{
     font-size: 1.2rem;
     font-weight: 600;
+    margin-top: 40px;
 }
