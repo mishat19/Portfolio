@@ -300,3 +300,35 @@ footer .copyright{
     font-weight: 600;
     margin-top: 40px;
 }
+
+
+
+
+
+
+/*CHARGMEENT STYLES*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 2rem;
+}
+
+.container-loading-index{
+    margin-top: 0;
+}
+
+.logo-loading {
+    width: 200px;
+    animation: rotate 5s linear infinite;
+}
