@@ -103,12 +103,17 @@ main{
     height: auto;
 }
 
+main .sections{
+    width: 80%;
+}
+
 /*STYLES SECTION DEMMARAGE*/
 
 main .demarrage-section {
     position: relative;
-    height: calc(100vh - 100px);
+    height: calc(700px - 100px);
     margin-top: 100px;
+    margin-bottom: 100px;
     width: 100%;
     background-color: #6A9C89;
 }
@@ -169,7 +174,7 @@ main .presentation-section{
     align-items: center;
     width: 80%;
     height: 100%;
-    margin: 20px 2% 0 2%;
+    margin: 20px 2% 100px 2%;
 }
 
 .presentation-section .introduction{
@@ -189,6 +194,77 @@ main .presentation-section{
 .presentation-section .introduction p{
     font-size: 25px;
 }
+
+/*STYLES GENERAUX SECTIONS*/
+
+main .main-sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 20px 2% 100px 2%;
+}
+
+.main-sections .main-titres{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.main-sections .main-titres::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+}
+
+/*STYLES SECTION MA FORMATION*/
+.main .formation-section .formation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formation-section .formation-container .categorie-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.formation-container .categorie-container .categorie-texte{
+    text-align: left;
+    text-justify: inter-word;
+    width: 50%;
+    font-size: 17px;
+}
+
+.formation-container .categorie-container .categorie-image{
+    text-align: center;
+    width: 50%;
+}
+
+.categorie-container .categorie-image img{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+}
+
+/*STYLES SECTION BLOG*/
+
+
+/*STYLES SECTION FAQ*/
+
+
 
 /*Styles footer*/
 
@@ -354,4 +430,11 @@ footer .copyright{
 
 .container-main .loading-container .sous-titre{
     font-size: 20px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1600px){
+    main .demarrage-section{
+        height: calc(100vh - 100px);
+    }
 }
