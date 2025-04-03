@@ -264,7 +264,43 @@ main .main-sections{
 
 /*STYLES SECTION FAQ*/
 
+main .faq-section{
+    border-radius: 8px;
+    width: 60%;
+}
 
+.faq-section .faq-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-item .faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3{
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.faq-item .faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p{
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #555;
+}
 
 /*Styles footer*/
 
