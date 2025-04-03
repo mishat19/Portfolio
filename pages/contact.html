@@ -35,10 +35,60 @@
     </nav>
 
     <main>
-      <div class="container-main">
-        <img src="../images/sablier-logo.png" alt="Logo de chargement" class="logo-loading">
-        <p class="texte-loading">En cours de création (Portfolio v2)</p>
-      </div>
+      <section class="main-sections contact-section">
+        <h2 class="main-titres contacter-titre">Me contacter</h2>
+        <article class="contact-article">
+          <div class="contact-container">
+            <form action="" method="post" class="contact-form">
+              <div class="form-group">
+                <label for="email">Votre adresse mail :</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+              </div>
+              <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+              </div>
+              <div class="form-group">
+                <label for="objet">Objet :</label>
+                <input type="text" id="objet" name="objet" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="verification">Recopiez "France" :</label>
+                <input type="text" id="verification" name="verification" required>
+              </div>
+              <div class="form-group">
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+          <div class="info-container">
+            <div class="info-text">
+              <p>Pour toute question ou démarche, je vous invite à m'envoyer un mail auquel je répondrais dans
+              les plus brefs délais. <br><b>[Fonctionnalité prochainement mise en place via l'API GMAIL]</b></p><br>
+              <p>Je reste également joignable sur mes différents réseaux disponibles ci-dessous.</p>
+            </div>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.995142030358!2d2.2603290513375414!3d49.87144100779096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78381d1efbe3b%3A0xedef919c163f849d!2sIUT%20Amiens-Institut%20universitaire%20de%20technologie!5e0!3m2!1sfr!2sfr!4v1743717299339!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            <div class="reseaux-sociaux">
+              <h3 class="titre-reseaux">Mes Réseaux</h3>
+              <div class="liens-reseaux">
+                <a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin-logo.png" alt="Logo Linkedin" class="logo-reseau"></a>
+                <a href="https://discord.com" target="_blank"><img src="../images/discord-logo.png" alt="Logo Discord" class="logo-reseau"></a>
+                <a href="https://x.com/mishatR19" target="_blank"><img src="../images/x-logo.png" alt="Logo X/Twitter" class="logo-reseau"></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
     </main>
 
     <footer>
