@@ -241,7 +241,8 @@ main .main-sections{
 }
 
 .formation-container .categorie-container .categorie-texte{
-    text-align: center;
+    text-align: left;
+    text-justify: inter-word;
     width: 50%;
     font-size: 17px;
 }
@@ -254,10 +255,8 @@ main .main-sections{
 .categorie-container .categorie-image img{
     border: 1px solid black;
     border-radius: 5px;
-    padding: 100px;
-    width: 100px;
-    height: 100px;
-    max-width: 200px;
+    width: 400px;
+    height: 200px;
 }
 
 /*STYLES SECTION BLOG*/
