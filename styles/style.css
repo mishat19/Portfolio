@@ -103,11 +103,15 @@ main{
     height: auto;
 }
 
+main .sections{
+    width: 80%;
+}
+
 /*STYLES SECTION DEMMARAGE*/
 
 main .demarrage-section {
     position: relative;
-    height: calc(100vh - 100px);
+    height: calc(700px - 100px);
     margin-top: 100px;
     width: 100%;
     background-color: #6A9C89;
@@ -189,6 +193,34 @@ main .presentation-section{
 .presentation-section .introduction p{
     font-size: 25px;
 }
+
+/*STYLES GENERAUX SECTIONS*/
+
+.main-titres{
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+
+.main-titres::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+}
+
+/*STYLES SECTION MA FORMATION*/
+
+
+/*STYLES SECTION BLOG*/
+
+
+/*STYLES SECTION FAQ*/
+
+
 
 /*Styles footer*/
 
@@ -354,4 +386,11 @@ footer .copyright{
 
 .container-main .loading-container .sous-titre{
     font-size: 20px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1600px){
+    main .demarrage-section{
+        height: calc(100vh - 100px);
+    }
 }
