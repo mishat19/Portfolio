@@ -272,7 +272,7 @@ main .faq-section{
 .faq-section .faq-item{
     display: flex;
     justify-content: flex-start;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
@@ -473,6 +473,15 @@ footer .copyright{
     main .demarrage-section{
         height: calc(100vh - 100px);
     }
+}
+
+/**************************************PAGE COMPETENCES**************************************/
+
+/*STYLES GENERAUX*/
+main .competences-section{
+    display: flex;
+    margin-top: 150px;
+    width: 100%;
 }
 
 /**************************************PAGE CONTACTS**************************************/
