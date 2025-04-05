@@ -1,6 +1,6 @@
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;
-    const arrow = element.querySelector('.faq-question .arrow');
+    const arrow = element.querySelector('.arrow');
 
     if (answer.style.maxHeight) {
         answer.style.maxHeight = null;
