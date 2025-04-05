@@ -486,16 +486,8 @@ footer .copyright{
 main .competences-section{
     display: flex;
     margin-top: 150px;
+    margin-bottom: 0;
     width: 100%;
-}
-
-/**************************************PAGE CONTACTS**************************************/
-
-/*STYLES GENERAUX*/
-main .contact-section{
-    display: flex;
-    margin-top: 150px;
-    width: 80%;
 }
 
 .competences-container .langages-container{
@@ -628,6 +620,23 @@ main .contact-section{
     display: flex;
     width: 100%;
     padding: 10px;
+}
+
+.description-hidden .item .caracteristique{
+    width: 25%;
+}
+
+.description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond{
+    width: 75%;
+}
+
+/**************************************PAGE CONTACTS**************************************/
+
+/*STYLES GENERAUX*/
+main .contact-section{
+    display: flex;
+    margin-top: 150px;
+    width: 80%;
 }
 
 /*STYLES CONTACTS*/
