@@ -500,6 +500,8 @@ main .contact-section{
 
 .competences-container .langages-container{
     display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 20px;
     width: 100%;
@@ -512,21 +514,20 @@ main .contact-section{
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    width: auto;
 }
 
-.langage-item .image-container{
+.langage-item .item .image-container{
     position: relative;
     width: 400px;
     height: 200px;
 }
 
-.langage-item .image-container .image{
+.item .image-container .image{
     width: 100%;
     height: 100%;
 }
 
-.langage-item .texte-absolute{
+.item .image-container .texte-absolute{
     position: absolute;
     top: 0;
     right: 0;
@@ -545,9 +546,8 @@ main .contact-section{
     margin-right: 5px;
 }
 
-.langage-item .description-container{
+.langage-item .item .description-container{
     background-color: #6A9C89;
-    width: 100%;
 }
 
 .description-container .description-visible{
