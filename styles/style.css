@@ -577,6 +577,12 @@ main .contact-section{
 
 /*STYLES CONTACTS*/
 
+.contact-section .contact-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-section .contact-container{
     width: 100%;
 }
