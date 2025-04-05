@@ -537,13 +537,40 @@ main .contact-section{
     justify-content: center;
     align-items: center;
     margin: 5px 5px 0 0;
-    background-color: rgba(255, 0, 0, 0.5);
     border-radius: 25px;
     padding: 1px 5px;
 }
 
+.image-container .texte-absolute.vert{
+    background-color: #32CD32;
+}
+.image-container .texte-absolute.jaune{
+    background-color: #FFFACD;
+}
+.image-container .texte-absolute.rouge{
+    background-color: #FF6347;
+}
+
 .texte-absolute .point-absolute{
     margin-right: 5px;
+}
+
+.texte-absolute .texte{
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+
+.texte-absolute .point-absolute.vert, .texte-absolute .texte.vert{
+    color: #228B22;
+}
+
+.texte-absolute .point-absolute.jaune, .texte-absolute .texte.jaune{
+    color: #FFD700;
+}
+
+.texte-absolute .point-absolute.rouge, .texte-absolute .texte.rouge{
+    color: #B22222;
 }
 
 .langage-item .item .description-container{
@@ -552,11 +579,25 @@ main .contact-section{
 
 .description-container .description-visible{
     display: flex;
-    justify-content: space-between;
     width: 100%;
     height: auto;
     padding: 10px;
     background-color: #80C0A0;
+}
+
+.description-visible .progress-bar-fond{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+
+.description-visible .progress-bar.percent{
+    width: 0;
+    background-color: #875f29;
+    height: auto;
+    border-radius:10px;
 }
 
 .description-container .description-hidden{
