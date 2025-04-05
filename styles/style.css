@@ -542,10 +542,10 @@ main .contact-section{
 }
 
 .image-container .texte-absolute.vert{
-    background-color: #32CD32;
+    background-color: #D6F8D6;
 }
 .image-container .texte-absolute.jaune{
-    background-color: #FFFACD;
+    background-color: #fff3cd;
 }
 .image-container .texte-absolute.rouge{
     background-color: #FF6347;
@@ -557,16 +557,16 @@ main .contact-section{
 
 .texte-absolute .texte{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
 }
 
 .texte-absolute .point-absolute.vert, .texte-absolute .texte.vert{
-    color: #228B22;
+    color: #205C20;
 }
 
 .texte-absolute .point-absolute.jaune, .texte-absolute .texte.jaune{
-    color: #FFD700;
+    color: #856404;
 }
 
 .texte-absolute .point-absolute.rouge, .texte-absolute .texte.rouge{
@@ -575,29 +575,45 @@ main .contact-section{
 
 .langage-item .item .description-container{
     background-color: #6A9C89;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .description-container .description-visible{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
-    padding: 10px;
-    background-color: #80C0A0;
+    padding : 10px;
 }
 
-.description-visible .progress-bar-fond{
+.description-visible .nom, .description-visible .progress-bar-fond,
+.description-hidden .caracteristique, .description-hidden .progress-bar-fond{
+    margin-right: 5px;
+}
+
+.description-visible .nom{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description-visible .progress-bar-fond, .description-hidden .item .progress-bar-fond{
     width: 100%;
-    height: auto;
+    height: 25px;
     background-color: #ffffff;
     border-radius:10px;
-    margin-bottom: 10px;
 }
 
-.description-visible .progress-bar.percent{
+.description-visible .progress-bar.percent,.description-hidden .progress-bar.percent{
     width: 0;
-    background-color: #875f29;
-    height: auto;
+    background-color: #C4DAD2;
+    height: 25px;
     border-radius:10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .description-container .description-hidden{
@@ -610,10 +626,8 @@ main .contact-section{
 
 .description-container .description-hidden .item{
     display: flex;
-    justify-content: space-between;
     width: 100%;
     padding: 10px;
-    margin-left: 10px;
 }
 
 /*STYLES CONTACTS*/
