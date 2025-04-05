@@ -485,12 +485,12 @@ footer .copyright{
 /*STYLES GENERAUX*/
 main .competences-section{
     display: flex;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     margin-bottom: 0;
     width: 100%;
 }
 
-.competences-container .langages-container{
+.competences-programmation-container .langages-container{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
