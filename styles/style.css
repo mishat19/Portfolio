@@ -16,7 +16,7 @@ body{
     background-color: #E9EFEC;
 }
 
-.logo-reseau{
+.logo-reseau{                                                                                                                                                                                                       /*Copyrights 2025 - Mathis Brongniart*/
     width: 35px;
 }
 
@@ -272,7 +272,7 @@ main .faq-section{
 .faq-section .faq-item{
     display: flex;
     justify-content: flex-start;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
@@ -282,6 +282,7 @@ main .faq-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -294,6 +295,10 @@ main .faq-section{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+}
+
+.arrow:hover{
+    cursor: pointer;
 }
 
 .faq-answer p{
@@ -475,23 +480,199 @@ footer .copyright{
     }
 }
 
+/**************************************PAGE COMPETENCES**************************************/
+
+/*STYLES GENERAUX*/
+main .competences-section{
+    display: flex;
+    /*margin-top: 150px;*/
+    margin-bottom: 0;
+    width: 80%;
+}
+
+.competences-programmation-container h3, .competences-generales-container h3{
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+.competences-programmation-container .langages-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.langages-container .langage-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.langage-item .item .image-container{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.item .image-container .image{
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+}
+
+.item .image-container .texte-absolute{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 0 0;
+    border-radius: 25px;
+    padding: 1px 5px;
+}
+
+.image-container .texte-absolute.vert{
+    background-color: #D6F8D6;
+}
+.image-container .texte-absolute.jaune{
+    background-color: #fff3cd;
+}
+.image-container .texte-absolute.rouge{
+    background-color: #FF6347;
+}
+
+.texte-absolute .point-absolute{
+    margin-right: 5px;
+}
+
+.texte-absolute .texte{
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+}
+
+.texte-absolute .point-absolute.vert, .texte-absolute .texte.vert{
+    color: #205C20;
+}
+
+.texte-absolute .point-absolute.jaune, .texte-absolute .texte.jaune{
+    color: #856404;
+}
+
+.texte-absolute .point-absolute.rouge, .texte-absolute .texte.rouge{
+    color: #B22222;
+}
+
+.item .image-container .texte-absolute-titre{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte-absolute-titre .texte-titre{
+    font-weight: 600;
+    font-size: 50px;
+    color: #E9EFEC;
+    text-align: center;
+}
+
+.langage-item .item .description-container{
+    background-color: #6A9C89;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.description-container .description-visible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding : 10px;
+}
+
+.description-visible .nom, .description-visible .progress-bar-fond,
+.description-hidden .caracteristique, .description-hidden .progress-bar-fond{
+    margin-right: 5px;
+}
+
+.description-visible .nom{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description-visible .progress-bar-fond, .description-hidden .item .progress-bar-fond{
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius:10px;
+}
+
+.description-visible .progress-bar.percent,.description-hidden .progress-bar.percent{
+    width: 0;
+    background-color: #C4DAD2;
+    height: 25px;
+    border-radius:10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.description-container .description-hidden{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.description-container .description-hidden .item{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.description-hidden .item .caracteristique{
+    width: 26%;
+}
+
+.description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond{
+    width: 74%;
+}
+
 /**************************************PAGE CONTACTS**************************************/
 
 /*STYLES GENERAUX*/
 main .contact-section{
     display: flex;
     margin-top: 150px;
-    width: 100%;
+    width: 80%;
 }
+
+/*STYLES CONTACTS*/
 
 .contact-section .contact-article{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
 }
-
-/*STYLES CONTACTS*/
 
 .contact-section .contact-container{
     width: 100%;

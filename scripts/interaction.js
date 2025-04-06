@@ -1,6 +1,6 @@
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;
-    const arrow = element.querySelector('.faq-question .arrow');
+    const arrow = element.querySelector('.arrow');
 
     if (answer.style.maxHeight) {
         answer.style.maxHeight = null;
@@ -11,12 +11,28 @@ function toggleAnswer(element) {
     }
 }
 
+function animateProgressBar(element) {
+    const progress = element;
+    const targetWidth = parseInt(progress.textContent, 10); // Convertit le texte en nombre
+    let currentWidth = 0;
+
+    const interval = setInterval(function() {
+        if (currentWidth >= targetWidth) {
+            clearInterval(interval);
+        } else {
+            currentWidth++;
+            progress.style.width = currentWidth + '%';
+            progress.textContent = currentWidth + '%';
+        }
+    }, 30); // Vitesse de l'animation (en millisecondes)
+}
+
 function changeUpdateDate(element) {
     // Sélectionnez l'élément avec la classe 'maj-auto'
     const dateElement = element.querySelector('.maj-auto');
     if (dateElement) {
         // Mettre à jour le contenu avec la date fixe
-        dateElement.innerHTML = '<b>04/04/2025 - 01h27</b>';
+        dateElement.innerHTML = '<b>06/04/2025 - 22h10</b>';
     }
 }
 
@@ -26,4 +42,10 @@ window.onload = function() {
     if (element) {
         changeUpdateDate(element);
     }
+
+    const progressBarElement = document.querySelectorAll('.percent');
+
+    progressBarElement.forEach(function(progressBarElement) {
+        animateProgressBar(progressBarElement);
+    });
 };
