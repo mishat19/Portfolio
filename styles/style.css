@@ -487,7 +487,13 @@ main .competences-section{
     display: flex;
     /*margin-top: 150px;*/
     margin-bottom: 0;
-    width: 100%;
+    width: 80%;
+}
+
+.competences-programmation-container h3, .competences-generales-container h3{
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 40px;
 }
 
 .competences-programmation-container .langages-container{
@@ -506,6 +512,7 @@ main .competences-section{
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .langage-item .item .image-container{
@@ -643,11 +650,11 @@ main .competences-section{
 }
 
 .description-hidden .item .caracteristique{
-    width: 25%;
+    width: 26%;
 }
 
 .description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond{
-    width: 75%;
+    width: 74%;
 }
 
 /**************************************PAGE CONTACTS**************************************/

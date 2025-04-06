@@ -32,7 +32,7 @@ function changeUpdateDate(element) {
     const dateElement = element.querySelector('.maj-auto');
     if (dateElement) {
         // Mettre à jour le contenu avec la date fixe
-        dateElement.innerHTML = '<b>05/04/2025 - 14h55</b>';
+        dateElement.innerHTML = '<b>06/04/2025 - 22h10</b>';
     }
 }
 
