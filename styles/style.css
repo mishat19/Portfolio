@@ -517,6 +517,7 @@ main .competences-section{
 .item .image-container .image{
     width: 100%;
     height: 100%;
+    filter: blur(1px);
 }
 
 .item .image-container .texte-absolute{
@@ -563,6 +564,25 @@ main .competences-section{
 
 .texte-absolute .point-absolute.rouge, .texte-absolute .texte.rouge{
     color: #B22222;
+}
+
+.item .image-container .texte-absolute-titre{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte-absolute-titre .texte-titre{
+    font-weight: 600;
+    font-size: 50px;
+    color: #E9EFEC;
+    text-align: center;
 }
 
 .langage-item .item .description-container{
