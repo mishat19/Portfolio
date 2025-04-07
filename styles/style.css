@@ -484,12 +484,12 @@ footer .copyright{
 
 /*STYLES GENERAUX*/
 main .competences-section{
-    /*margin-top: 150px;*/
+    margin-top: 150px;
     width: 80%;
 }
 
 .competences-programmation-container h3, .competences-generales-container h3{
-    font-size: 22px;
+    font-size: 24px;
     text-decoration: underline;
     margin-bottom: 40px;
 }
@@ -657,10 +657,42 @@ main .competences-section{
 
 .competences-section .competences-generales-container{
     width: 100%;
+    margin-top: 50px;
 }
 
 .competences-generales-container .generales-container{
     display: inline-block;
+}
+
+.competences-generales-container .generales-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.generales-container h4{
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    color: #16423C;
+}
+
+.generales-container .general-container-item{
+    margin-bottom: 40px;
+}
+
+.general-categorie{
+    text-align: justify;
+    font-size: 17px;
+}
+
+.general-categorie .general-item span{
+    font-size: 19px;
+    color: #6A9C89;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /**************************************PAGE CONTACTS**************************************/
