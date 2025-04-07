@@ -27,12 +27,27 @@ function animateProgressBar(element) {
     }, 30); // Vitesse de l'animation (en millisecondes)
 }
 
+function animateProgressBarProjets(element) {
+    const progress = element;
+    const targetWidth = parseInt(progress.classList[2], 10); // Convertit le texte en nombre
+    let currentWidth = 0;
+
+    const interval = setInterval(function() {
+        if (currentWidth >= targetWidth) {
+            clearInterval(interval);
+        } else {
+            currentWidth++;
+            progress.style.width = currentWidth + '%';
+        }
+    }, 15); // Vitesse de l'animation (en millisecondes)
+}
+
 function changeUpdateDate(element) {
     // Sélectionnez l'élément avec la classe 'maj-auto'
     const dateElement = element.querySelector('.maj-auto');
     if (dateElement) {
         // Mettre à jour le contenu avec la date fixe
-        dateElement.innerHTML = '<b>06/04/2025 - 22h10</b>';
+        dateElement.innerHTML = '<b>07/04/2025 - 21h</b>';
     }
 }
 
@@ -43,9 +58,14 @@ window.onload = function() {
         changeUpdateDate(element);
     }
 
+    const element2 = document.querySelectorAll('.progress-bar-fond-projets .progress-bar-projets');
+    element2.forEach(function(bar){
+        animateProgressBarProjets(bar);
+    })
+
     const progressBarElement = document.querySelectorAll('.percent');
 
-    progressBarElement.forEach(function(progressBarElement) {
+    progressBarElement.forEach(function(progressBarElement){
         animateProgressBar(progressBarElement);
     });
 };
