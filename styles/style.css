@@ -549,11 +549,45 @@ main .competences-section{
     background-color: #FF6347;
 }
 
-.texte-absolute .point-absolute{
+/*Page projets*/
+
+.absolute-item .texte-absolute2.html{
+    background-color: #FFE0CC;
+}
+
+.absolute-item .texte-absolute2.css{
+    background-color: #CCE5FF;
+}
+
+.absolute-item .texte-absolute2.js{
+    background-color: #FFF5CC;
+}
+
+.absolute-item .texte-absolute2.sql{
+    background-color: #DDEBDB;
+}
+
+.absolute-item .texte-absolute2.php{
+    background-color: #D3CFEA;
+}
+
+.absolute-item .texte-absolute2.python{
+    background-color: #D6F0FF;
+}
+
+.absolute-item .texte-absolute2.cpp{
+    background-color: #E0F0FF;
+}
+
+.absolute-item .texte-absolute2.csharp{
+    background-color: #E8D6FF;
+}
+
+.texte-absolute .point-absolute, .texte-absolute2{
     margin-right: 5px;
 }
 
-.texte-absolute .texte{
+.texte-absolute .texte, .texte-absolute2{
     font-weight: 600;
     font-size: 17px;
     text-align: center;
@@ -569,6 +603,40 @@ main .competences-section{
 
 .texte-absolute .point-absolute.rouge, .texte-absolute .texte.rouge{
     color: #B22222;
+}
+
+/*Page projets*/
+
+.absolute-item .texte-absolute2.html{
+    color: #E55C00;
+}
+
+.absolute-item .texte-absolute2.css{
+    color: #004C99;
+}
+
+.absolute-item .texte-absolute2.js{
+    color: #C2A300;
+}
+
+.absolute-item .texte-absolute2.sql{
+    color: #2E7D32;
+}
+
+.absolute-item .texte-absolute2.php{
+    color: #5C4FA3;
+}
+
+.absolute-item .texte-absolute2.python{
+    color: #306998;
+}
+
+.absolute-item .texte-absolute2.cpp{
+    color: #004482;
+}
+
+.absolute-item .texte-absolute2.csharp{
+    color: #5A2C91;
 }
 
 .item .image-container .texte-absolute-titre{
@@ -606,7 +674,8 @@ main .competences-section{
 }
 
 .description-visible .nom, .description-visible .progress-bar-fond,
-.description-hidden .caracteristique, .description-hidden .progress-bar-fond{
+.description-hidden .caracteristique, .description-hidden .progress-bar-fond,
+.description-visible .progress-bar-fond-projets{
     margin-right: 5px;
 }
 
@@ -616,14 +685,14 @@ main .competences-section{
     text-align: center;
 }
 
-.description-visible .progress-bar-fond, .description-hidden .item .progress-bar-fond{
+.description-visible .progress-bar-fond, .description-hidden .item .progress-bar-fond, .description-visible .progress-bar-fond-projets{
     width: 100%;
     height: 25px;
     background-color: #ffffff;
     border-radius:10px;
 }
 
-.description-visible .progress-bar.percent,.description-hidden .progress-bar.percent{
+.description-visible .progress-bar.percent,.description-hidden .progress-bar.percent, .description-visible.animate-progress{
     width: 0;
     background-color: #C4DAD2;
     height: 25px;
@@ -647,11 +716,12 @@ main .competences-section{
     padding: 10px;
 }
 
-.description-hidden .item .caracteristique{
+.description-hidden .item .caracteristique, .description-visible .arrow{
     width: 26%;
 }
 
-.description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond{
+.description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond,
+.description-visible .progress-bar-fond-projets{
     width: 74%;
 }
 
@@ -694,6 +764,48 @@ main .competences-section{
     font-weight: bold;
     text-decoration: underline;
 }
+
+/**************************************PAGE PROJETS**************************************/
+
+/*STYLES GENERAUX*/
+main .projets-section{
+    /*margin-top: 150px;*/
+    width: 80%;
+}
+
+.absolute-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.absolute-item .texte-absolute2{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 0 0;
+    border-radius: 25px;
+    padding: 1px 5px;
+}
+
+.texte-absolute2{
+    font-size: 15px;
+}
+
+.description-visible button{
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E9EFEC;
+}
+
+
+/**************************************PAGE A PROPOS**************************************/
+
+
 
 /**************************************PAGE CONTACTS**************************************/
 
