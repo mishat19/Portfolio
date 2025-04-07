@@ -484,9 +484,7 @@ footer .copyright{
 
 /*STYLES GENERAUX*/
 main .competences-section{
-    display: flex;
     /*margin-top: 150px;*/
-    margin-bottom: 0;
     width: 80%;
 }
 
@@ -655,6 +653,14 @@ main .competences-section{
 
 .description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond{
     width: 74%;
+}
+
+.competences-section .competences-generales-container{
+    width: 100%;
+}
+
+.competences-generales-container .generales-container{
+    display: inline-block;
 }
 
 /**************************************PAGE CONTACTS**************************************/
