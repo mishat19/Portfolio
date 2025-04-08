@@ -435,7 +435,7 @@ footer .copyright{
 
 
 
-/*CHARGMEENT STYLES*/
+/*CHARGEMENT STYLES*/
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -494,7 +494,7 @@ main .competences-section{
     margin-bottom: 40px;
 }
 
-.competences-programmation-container .langages-container, .projets-container .langages-container{
+.competences-programmation-container .langages-container, .projets-container .projets-elements{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -503,7 +503,7 @@ main .competences-section{
     width: 100%;
 }
 
-.langages-container .langage-item{
+.langages-container .langage-item, .projets-elements .projet-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,7 +513,7 @@ main .competences-section{
     margin-right: 10px;
 }
 
-.langage-item .item .image-container{
+.langage-item .item .image-container, .projet-item .item .image-container{
     position: relative;
     width: 400px;
     height: 200px;
@@ -579,7 +579,7 @@ main .competences-section{
     background-color: #E0F0FF;
 }
 
-.absolute-item .texte-absolute2.csharp{
+.absolute-item .texte-absolute2.cs{
     background-color: #E8D6FF;
 }
 
@@ -635,7 +635,7 @@ main .competences-section{
     color: #004482;
 }
 
-.absolute-item .texte-absolute2.csharp{
+.absolute-item .texte-absolute2.cs{
     color: #5A2C91;
 }
 
@@ -658,7 +658,7 @@ main .competences-section{
     text-align: center;
 }
 
-.langage-item .item .description-container{
+.projet-item .item .description-container{
     background-color: #6A9C89;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -802,7 +802,7 @@ main .projets-section{
 }
 
 /*Projets*/
-.langages-container .message-container{
+.projets-elements .message-container{
     display: none;
     width: 100%;
     font-size: 20px;

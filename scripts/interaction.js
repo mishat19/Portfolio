@@ -48,10 +48,8 @@ function toggleAnswer(element) {
 
     if (answer.style.maxHeight) {
         answer.style.maxHeight = null;
-        arrow.style.transform = 'rotate(0deg)';
     } else {
         answer.style.maxHeight = answer.scrollHeight + 'px';
-        arrow.style.transform = 'rotate(90deg)';
     }
 }
 
@@ -97,8 +95,8 @@ function changeUpdateDate(element) {
 
 function filtreLangage() {
     const langages = document.querySelectorAll('.filtre-container input[type="checkbox"]');
-    const projets = document.querySelectorAll('.langages-container .langage-item');
-    const message = document.querySelector('.langages-container .message-container');
+    const projets = document.querySelectorAll('.projets-elements .projet-item');
+    const message = document.querySelector('.projets-elements .message-container');
     let projetVisible = false;
 
     if (langages[8].checked) { // "Tout" est coché
