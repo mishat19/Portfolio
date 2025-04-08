@@ -106,7 +106,7 @@ function changeUpdateDate(element) {
     const dateElement = element.querySelector('.maj-auto');
     if (dateElement) {
         // Mettre à jour le contenu avec la date fixe
-        dateElement.innerHTML = '<b>08/04/2025 - 17h30</b>';
+        dateElement.innerHTML = '<b>08/04/2025 - 23h10</b>';
     }
 }
 
