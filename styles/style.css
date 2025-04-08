@@ -559,7 +559,7 @@ main .competences-section{
     background-color: #CCE5FF;
 }
 
-.absolute-item .texte-absolute2.js{
+.absolute-item .texte-absolute2.javascript{
     background-color: #FFF5CC;
 }
 
@@ -615,7 +615,7 @@ main .competences-section{
     color: #004C99;
 }
 
-.absolute-item .texte-absolute2.js{
+.absolute-item .texte-absolute2.javascript{
     color: #C2A300;
 }
 
@@ -774,6 +774,10 @@ main .projets-section{
     width: 80%;
 }
 
+.projets-section .projets-container{
+    width: 100%;
+}
+
 /*Barre de filtres*/
 .projets-container .bar-filtres{
     display: flex;
@@ -800,6 +804,11 @@ main .projets-section{
 /*Projets*/
 .langages-container .message-container{
     display: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
 }
 .absolute-item{
     position: absolute;
