@@ -46,42 +46,88 @@
   <section class="main-sections projets-section">
     <h2 class="main-titres container-titre">Mes projets</h2>
     <article class="projets-container">
-      <div class="filtre-langages">
+      <div class="bar-filtres">
         <h3>Filtres :</h3>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="1">
-          <p class="langage">HTML</p>
-        </div>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="2">
-          <p class="langage">CSS</p>
-        </div>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="3">
-          <p class="langage">JavaScript</p>
-        </div>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="4">
-          <p class="langage">SQL</p>
-        </div>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="5">
-          <p class="langage">PHP</p>
-        </div>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="6">
-          <p class="langage">Python</p>
-        </div>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="7">
-          <p class="langage">C++</p>
-        </div>
-        <div class="filtre-container">
-          <input type="checkbox" name="CCC" class="8">
-          <p class="langage">C#</p>
+        <div class="filtre-langages">
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="javascript" id="javascript">
+            <label for="javascript">JavaScript</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="sql" id="sql">
+            <label for="sql">SQL</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="php" id="php">
+            <label for="php">PHP</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="python" id="python">
+            <label for="python">Python</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="cpp" id="cpp">
+            <label for="cpp">C++</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="cs" id="cs">
+            <label for="cs">C#</label>
+          </div>
+          <div class="filtre-container" onclick="filtreLangage()">
+            <input type="checkbox" name="tout" id="all" checked>
+            <label for="all">Tout</label>
+          </div>
         </div>
       </div>
       <div class="langages-container">
+        <div class="message-container">
+          <p>Aucun projet à afficher</p>
+        </div>
+        <div class="langage-item">
+          <div class="item">
+            <div class="image-container">
+              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+              <div class="absolute-elements">
+                <div class="absolute-item">
+                  <div class="texte-absolute2 css">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">CSS</p>
+                  </div>
+                  <div class="texte-absolute2 html">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">HTML</p>
+                  </div>
+                  <div class="texte-absolute2 js">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">JavaScript</p>
+                  </div>
+                </div>
+                <div class="texte-absolute-titre">
+                  <p class="texte-titre">Portfolio</p>
+                </div>
+              </div>
+            </div>
+            <div class="description-container">
+              <div class="description-visible" onclick="toggleAnswer(this)">
+                <div class="progress-bar-fond-projets">
+                  <div class="progress-bar-projets animate-progress 60">En cours</div>
+                </div>
+                <button class="arrow">Détails</button>
+              </div>
+              <div class="description-hidden">
+                <p class="nom">PHP</p>
+              </div>
+            </div>
+          </div>
+        </div> <!--Portfolio-->
         <div class="langage-item">
           <div class="item">
             <div class="image-container">
@@ -125,13 +171,9 @@
               <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
               <div class="absolute-elements">
                 <div class="absolute-item">
-                  <div class="texte-absolute2 html">
+                  <div class="texte-absolute2 php">
                     <span class="point-absolute">&#9679;</span>
-                    <p class="texte">HTML</p>
-                  </div>
-                  <div class="texte-absolute2 css">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">CSS</p>
+                    <p class="texte">PHP</p>
                   </div>
                   <div class="texte-absolute2 js">
                     <span class="point-absolute">&#9679;</span>

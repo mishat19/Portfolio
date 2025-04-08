@@ -774,6 +774,33 @@ main .projets-section{
     width: 80%;
 }
 
+/*Barre de filtres*/
+.projets-container .bar-filtres{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.bar-filtres h3{
+    margin-right: 5px;
+}
+
+.bar-filtres .filtre-langages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-end;
+    width: 250px;
+}
+
+.filtre-langages .filtre-container{
+    margin: 0 5px 5px 0;
+}
+
+/*Projets*/
+.langages-container .message-container{
+    display: none;
+}
 .absolute-item{
     position: absolute;
     top: 0;
