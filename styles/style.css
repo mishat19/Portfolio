@@ -857,23 +857,22 @@ main .projets-section{
     background-color: #E9EFEC;
 }
 
-/*Panneaux latéraux*/
+/*Panneau latéral*/
 .panneaux-container{
     position: fixed;
+    display: none;
     top: 0;
-    right: -300px; /* Largeur du panneau, caché à droite */
-    height: 100vh;
-    width: 40%;
+    right: 0;
+    height: 600px; /* Hauteur pour activer le défilement */
+    width: 500px;
     background-color: #6A9C89;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease;
     z-index: 50;
     margin-top: 100px;
+    overflow-y: auto; /* Barre de défilement */
 }
 
 .panneaux-container.open{
-    right: 0;
-
+    display: block;
 }
 
 .panneaux-container .panneau-lateral{
@@ -881,10 +880,47 @@ main .projets-section{
 }
 
 .panneau-lateral .closeBtn{
+    position: fixed;
+    top: 102px;
     background-color: var(--blanc-casse);
     cursor: pointer;
     font-size: 18px;
     padding: 5px;
+}
+
+.panneau-lateral .introduction{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.introduction h2{
+    margin-bottom: 15px;
+}
+
+.introduction p{
+    margin-bottom: 30px;
+}
+
+.introduction video{
+    width: 100%;
+    height: auto;
+}
+
+.panneau-lateral .explications{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.panneau-lateral .gallerie-medias{
+    margin-top: 50px;
+}
+
+.gallerie-medias h3{
+    margin-bottom: 15px;
+}
+.gallerie-medias img, .gallerie-medias video{
+    width: 100px;
+    height: 100px;
 }
 
 /**************************************PAGE A PROPOS**************************************/
