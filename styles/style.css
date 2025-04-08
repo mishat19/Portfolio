@@ -1,3 +1,9 @@
+/*Couleurs*/
+:root{
+    --vert-pomme: #6A9C89;
+    --blanc-casse: #E9EFEC;
+}
+
 /*Styles généraux*/
 
 *{
@@ -16,6 +22,10 @@ body{
     background-color: #E9EFEC;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 .logo-reseau{                                                                                                                                                                                                       /*Copyrights 2025 - Mathis Brongniart*/
     width: 35px;
 }
@@ -30,6 +40,8 @@ nav {
     /*margin-bottom: 400px;*/
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid #16423C;
+    box-shadow: 1px 1px 1px #16423C;
 }
 
 nav .nav-elements{
@@ -666,11 +678,12 @@ main .competences-section{
 
 .description-container .description-visible{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: auto;
     padding : 10px;
+    background-color: #6A9C89;
 }
 
 .description-visible .nom, .description-visible .progress-bar-fond,
@@ -704,10 +717,10 @@ main .competences-section{
 }
 
 .description-container .description-hidden{
+    background-color: #6A9C89;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -717,7 +730,7 @@ main .competences-section{
     padding: 10px;
 }
 
-.description-hidden .item .caracteristique, .description-visible .arrow{
+.description-hidden .item .caracteristique, .description-visible .details{
     width: 26%;
 }
 
@@ -770,8 +783,9 @@ main .competences-section{
 
 /*STYLES GENERAUX*/
 main .projets-section{
+    position: relative;
     /*margin-top: 150px;*/
-    width: 80%;
+    width: 80% !important;
 }
 
 .projets-section .projets-container{
@@ -802,6 +816,10 @@ main .projets-section{
 }
 
 /*Projets*/
+.projets-elements{
+    margin-top: 50px;
+}
+
 .projets-elements .message-container{
     display: none;
     width: 100%;
@@ -839,6 +857,35 @@ main .projets-section{
     background-color: #E9EFEC;
 }
 
+/*Panneaux latéraux*/
+.panneaux-container{
+    position: fixed;
+    top: 0;
+    right: -300px; /* Largeur du panneau, caché à droite */
+    height: 100vh;
+    width: 40%;
+    background-color: #6A9C89;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 50;
+    margin-top: 100px;
+}
+
+.panneaux-container.open{
+    right: 0;
+
+}
+
+.panneaux-container .panneau-lateral{
+    margin: 10px 10px;
+}
+
+.panneau-lateral .closeBtn{
+    background-color: var(--blanc-casse);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
 
 /**************************************PAGE A PROPOS**************************************/
 

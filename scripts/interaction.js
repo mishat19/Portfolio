@@ -40,11 +40,28 @@ window.onload = function() {
         }
         filtreLangage();
     });
+
+    const panneau = document.querySelector('.panneaux-container');
+    const btnActivation = document.querySelectorAll('.details');
+    const btnDesactivation = document.querySelector('.closeBtn');
+    const body = document.body;
+
+    btnActivation.forEach(activation => {
+        activation.addEventListener('click', () => {
+            panneau.classList.add('open');
+            body.classList.add('no-scroll');
+        });
+    })
+
+    btnDesactivation.addEventListener('click', () => {
+        panneau.classList.remove('open');
+        body.classList.remove('no-scroll');
+    });
 };
 
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;
-    const arrow = element.querySelector('.arrow');
+    //const arrow = element.querySelector('.arrow'); A REGLER PLUS TARD
 
     if (answer.style.maxHeight) {
         answer.style.maxHeight = null;
