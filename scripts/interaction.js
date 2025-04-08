@@ -1,3 +1,22 @@
+window.onload = function() {
+    // Appeler la fonction pour l'élément avec l'ID 'class'
+    const element = document.getElementById('class');
+    if (element) {
+        changeUpdateDate(element);
+    }
+
+    const element2 = document.querySelectorAll('.progress-bar-fond-projets .progress-bar-projets');
+    element2.forEach(function(bar){
+        animateProgressBarProjets(bar);
+    })
+
+    const progressBarElement = document.querySelectorAll('.percent');
+
+    progressBarElement.forEach(function(progressBarElement){
+        animateProgressBar(progressBarElement);
+    });
+};
+
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;
     const arrow = element.querySelector('.arrow');
@@ -51,21 +70,44 @@ function changeUpdateDate(element) {
     }
 }
 
-window.onload = function() {
-    // Appeler la fonction pour l'élément avec l'ID 'class'
-    const element = document.getElementById('class');
-    if (element) {
-        changeUpdateDate(element);
+const verifTout = () =>{
+    const langage = document.querySelector('.filtre-container input[type="checkbox"][name="tout"]');
+    langage.checked = !langage.checked;
+}
+
+function filtreLangage() {
+    const langages = document.querySelectorAll('.filtre-container input');
+    const projets = document.querySelectorAll('.langages-container .langage-item');
+
+    const message = document.querySelector('.langages-container .message-container');
+
+    if(langages[8].checked){ //Tout
+        projets.forEach(function(projet) {
+            projet.style.display = 'flex';
+        })
+        message.style.display = 'none';
+    } else{
+        projets.forEach(function(projet) {
+            projet.style.display = 'none';
+        })
+        message.style.display = 'block';
     }
 
-    const element2 = document.querySelectorAll('.progress-bar-fond-projets .progress-bar-projets');
-    element2.forEach(function(bar){
-        animateProgressBarProjets(bar);
-    })
+    if (langages[1].checked) { //CSS
+        projets.forEach((projet) => {
+            const texteAbsoluteElements = projet.querySelectorAll('.item .image-container .absolute-elements .absolute-item .texte-absolute2');
 
-    const progressBarElement = document.querySelectorAll('.percent');
+            let contientCss = false;
+            texteAbsoluteElements.forEach((element) => {
+                if (element.classList.contains('css')) {
+                    contientCss = true;
+                }
+            });
 
-    progressBarElement.forEach(function(progressBarElement){
-        animateProgressBar(progressBarElement);
-    });
-};
+            if (!contientCss) {
+                projet.style.display = 'none';
+            }
+        });
+        verifTout();
+    }
+}
