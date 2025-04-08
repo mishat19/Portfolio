@@ -35,6 +35,36 @@
 </nav>
 
 <main>
+  <section class="panneaux-container">
+    <div class="panneau-lateral">
+      <button class="closeBtn">X</button>
+      <div class="introduction">
+        <h2>Titre <span style="color:darkred">[CONTENU DYNAMIQUE A VENIR]</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore eaque exercitationem fugiat illo labore neque, optio pariatur placeat possimus quia quos, ratione sed, sequi temporibus ullam unde vitae voluptatibus?</p>
+        <video controls>
+          <source src="#" type="video/mp4">
+          Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+      </div>
+      <div class="explications">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid corporis deserunt dignissimos, doloremque ducimus eaque earum error eveniet fuga ipsa iste iusto labore neque non omnis quia quibusdam rem reprehenderit rerum, sapiente sequi similique unde. A beatae dicta tempore veritatis voluptatum. Assumenda esse fugiat ipsa iure laborum numquam voluptas. Accusantium architecto aut eius nulla perferendis voluptatum? Aperiam ex impedit inventore nulla omnis voluptatibus? Accusamus aliquid aut commodi dicta distinctio eaque facere, fugit nam non officia quo quos suscipit temporibus?
+      </div>
+      <div class="gallerie-medias">
+        <h3>Gallerie de médias</h3>
+        <div class="medias">
+          <a href="#" class="lien-media"><img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
+          </a>
+          <a href="#" class="lien-media"><img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
+          </a>
+          <a href="#" class="lien-media"><video controls>
+            <source src="#" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+          </video></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="container-main">
     <img src="../images/sablier-logo.png" alt="Logo de chargement" class="logo-loading">
     <div class="loading-container">
@@ -42,6 +72,234 @@
       <p id="class" class="texte-loading sous-titre">(Dernière mise à jour : <span class="maj-auto"><b>04/04/2025 - 00h10</b></span>)</p>
     </div>
   </div>
+
+  <section class="main-sections projets-section">
+    <h2 class="main-titres container-titre">Mes projets</h2>
+    <article class="projets-container">
+      <div class="bar-filtres">
+        <h3>Filtres :</h3>
+        <div class="filtre-langages">
+          <div class="filtre-container">
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="javascript" id="javascript">
+            <label for="javascript">JavaScript</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="sql" id="sql">
+            <label for="sql">SQL</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="php" id="php">
+            <label for="php">PHP</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="python" id="python">
+            <label for="python">Python</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="cpp" id="cpp">
+            <label for="cpp">C++</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="cs" id="cs">
+            <label for="cs">C#</label>
+          </div>
+          <div class="filtre-container">
+            <input type="checkbox" name="tout" id="all" checked>
+            <label for="all">Tout</label>
+          </div>
+        </div>
+      </div>
+      <div class="projets-elements">
+        <div class="message-container">
+          <p>Aucun projet à afficher</p>
+        </div>
+        <div class="projet-item">
+          <div class="item">
+            <div class="image-container">
+              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+              <div class="absolute-elements">
+                <div class="absolute-item">
+                  <div class="texte-absolute2 html">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">HTML</p>
+                  </div>
+                  <div class="texte-absolute2 css">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">CSS</p>
+                  </div>
+                  <div class="texte-absolute2 javascript">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">JavaScript</p>
+                  </div>
+                </div>
+                <div class="texte-absolute-titre">
+                  <p class="texte-titre">Portfolio v2</p>
+                </div>
+              </div>
+            </div>
+            <div class="description-container">
+              <div class="description-visible">
+                <div class="progress-bar-fond-projets">
+                  <div class="progress-bar-projets animate-progress 60">En cours</div>
+                </div>
+                <button class="details">Détails</button>
+              </div>
+            </div>
+          </div>
+        </div> <!--Portfolio-->
+        <div class="projet-item">
+          <div class="item">
+            <div class="image-container">
+              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+              <div class="absolute-elements">
+                <div class="absolute-item">
+                  <div class="texte-absolute2 javascript">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">JavaScript</p>
+                  </div>
+                </div>
+                <div class="texte-absolute-titre">
+                  <p class="texte-titre">Grattage</p>
+                </div>
+              </div>
+            </div>
+            <div class="description-container">
+              <div class="description-visible">
+                <div class="progress-bar-fond-projets">
+                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                </div>
+                <button class="details">Détails</button>
+              </div>
+            </div>
+          </div>
+        </div> <!--Carte à gratter-->
+        <div class="projet-item">
+          <div class="item">
+            <div class="image-container">
+              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+              <div class="absolute-elements">
+                <div class="absolute-item">
+                  <div class="texte-absolute2 html">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">HTML</p>
+                  </div>
+                  <div class="texte-absolute2 css">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">CSS</p>
+                  </div>
+                  <div class="texte-absolute2 sql">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">SQL</p>
+                  </div>
+                  <div class="texte-absolute2 php">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">PHP</p>
+                  </div>
+                </div>
+                <div class="texte-absolute-titre">
+                  <p class="texte-titre">Messagerie</p>
+                </div>
+              </div>
+            </div>
+            <div class="description-container">
+              <div class="description-visible">
+                <div class="progress-bar-fond-projets">
+                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                </div>
+                <button class="details">Détails</button>
+              </div>
+            </div>
+          </div>
+        </div> <!--Messagerie-->
+        <div class="projet-item">
+          <div class="item">
+            <div class="image-container">
+              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+              <div class="absolute-elements">
+                <div class="absolute-item">
+                  <div class="texte-absolute2 python">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">Python</p>
+                  </div>
+                </div>
+                <div class="texte-absolute-titre">
+                  <p class="texte-titre">Sudoku</p>
+                </div>
+              </div>
+            </div>
+            <div class="description-container">
+              <div class="description-visible">
+                <div class="progress-bar-fond-projets">
+                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                </div>
+                <button class="details">Détails</button>
+              </div>
+            </div>
+          </div>
+        </div> <!--Sudoku-->
+        <div class="projet-item">
+          <div class="item">
+            <div class="image-container">
+              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+              <div class="absolute-elements">
+                <div class="absolute-item">
+                  <div class="texte-absolute2 cpp">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">C</p>
+                  </div>
+                </div>
+                <div class="texte-absolute-titre">
+                  <p class="texte-titre">GPS</p>
+                </div>
+              </div>
+            </div>
+            <div class="description-container">
+              <div class="description-visible">
+                <div class="progress-bar-fond-projets">
+                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                </div>
+                <button class="details">Détails</button>
+              </div>
+            </div>
+          </div>
+        </div> <!--GPS-->
+        <div class="projet-item">
+          <div class="item">
+            <div class="image-container">
+              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+              <div class="absolute-elements">
+                <div class="absolute-item">
+                  <div class="texte-absolute2 cs">
+                    <span class="point-absolute">&#9679;</span>
+                    <p class="texte">C#</p>
+                  </div>
+                </div>
+                <div class="texte-absolute-titre">
+                  <p class="texte-titre">Gestion Contacts</p>
+                </div>
+              </div>
+            </div>
+            <div class="description-container">
+              <div class="description-visible">
+                <div class="progress-bar-fond-projets">
+                  <div class="progress-bar-projets animate-progress 40">En cours</div>
+                </div>
+                <button class="details">Détails</button>
+              </div>
+            </div>
+          </div>
+        </div> <!--Gestion contacts-->
+      </div>
+    </article>
+  </section>
 </main>
 
 <footer>

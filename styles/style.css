@@ -1,3 +1,9 @@
+/*Couleurs*/
+:root{
+    --vert-pomme: #6A9C89;
+    --blanc-casse: #E9EFEC;
+}
+
 /*Styles généraux*/
 
 *{
@@ -16,6 +22,10 @@ body{
     background-color: #E9EFEC;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 .logo-reseau{                                                                                                                                                                                                       /*Copyrights 2025 - Mathis Brongniart*/
     width: 35px;
 }
@@ -30,6 +40,8 @@ nav {
     /*margin-bottom: 400px;*/
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid #16423C;
+    box-shadow: 1px 1px 1px #16423C;
 }
 
 nav .nav-elements{
@@ -435,7 +447,7 @@ footer .copyright{
 
 
 
-/*CHARGMEENT STYLES*/
+/*CHARGEMENT STYLES*/
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -484,19 +496,17 @@ footer .copyright{
 
 /*STYLES GENERAUX*/
 main .competences-section{
-    display: flex;
-    /*margin-top: 150px;*/
-    margin-bottom: 0;
+    margin-top: 150px;
     width: 80%;
 }
 
 .competences-programmation-container h3, .competences-generales-container h3{
-    font-size: 22px;
+    font-size: 24px;
     text-decoration: underline;
     margin-bottom: 40px;
 }
 
-.competences-programmation-container .langages-container{
+.competences-programmation-container .langages-container, .projets-container .projets-elements{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -505,7 +515,7 @@ main .competences-section{
     width: 100%;
 }
 
-.langages-container .langage-item{
+.langages-container .langage-item, .projets-elements .projet-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -515,7 +525,7 @@ main .competences-section{
     margin-right: 10px;
 }
 
-.langage-item .item .image-container{
+.langage-item .item .image-container, .projet-item .item .image-container{
     position: relative;
     width: 400px;
     height: 200px;
@@ -551,11 +561,45 @@ main .competences-section{
     background-color: #FF6347;
 }
 
-.texte-absolute .point-absolute{
+/*Page projets*/
+
+.absolute-item .texte-absolute2.html{
+    background-color: #FFE0CC;
+}
+
+.absolute-item .texte-absolute2.css{
+    background-color: #CCE5FF;
+}
+
+.absolute-item .texte-absolute2.javascript{
+    background-color: #FFF5CC;
+}
+
+.absolute-item .texte-absolute2.sql{
+    background-color: #DDEBDB;
+}
+
+.absolute-item .texte-absolute2.php{
+    background-color: #D3CFEA;
+}
+
+.absolute-item .texte-absolute2.python{
+    background-color: #D6F0FF;
+}
+
+.absolute-item .texte-absolute2.cpp{
+    background-color: #E0F0FF;
+}
+
+.absolute-item .texte-absolute2.cs{
+    background-color: #E8D6FF;
+}
+
+.texte-absolute .point-absolute, .texte-absolute2{
     margin-right: 5px;
 }
 
-.texte-absolute .texte{
+.texte-absolute .texte, .texte-absolute2{
     font-weight: 600;
     font-size: 17px;
     text-align: center;
@@ -571,6 +615,40 @@ main .competences-section{
 
 .texte-absolute .point-absolute.rouge, .texte-absolute .texte.rouge{
     color: #B22222;
+}
+
+/*Page projets*/
+
+.absolute-item .texte-absolute2.html{
+    color: #E55C00;
+}
+
+.absolute-item .texte-absolute2.css{
+    color: #004C99;
+}
+
+.absolute-item .texte-absolute2.javascript{
+    color: #C2A300;
+}
+
+.absolute-item .texte-absolute2.sql{
+    color: #2E7D32;
+}
+
+.absolute-item .texte-absolute2.php{
+    color: #5C4FA3;
+}
+
+.absolute-item .texte-absolute2.python{
+    color: #306998;
+}
+
+.absolute-item .texte-absolute2.cpp{
+    color: #004482;
+}
+
+.absolute-item .texte-absolute2.cs{
+    color: #5A2C91;
 }
 
 .item .image-container .texte-absolute-titre{
@@ -592,7 +670,7 @@ main .competences-section{
     text-align: center;
 }
 
-.langage-item .item .description-container{
+.projet-item .item .description-container{
     background-color: #6A9C89;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -600,15 +678,17 @@ main .competences-section{
 
 .description-container .description-visible{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: auto;
     padding : 10px;
+    background-color: #6A9C89;
 }
 
 .description-visible .nom, .description-visible .progress-bar-fond,
-.description-hidden .caracteristique, .description-hidden .progress-bar-fond{
+.description-hidden .caracteristique, .description-hidden .progress-bar-fond,
+.description-visible .progress-bar-fond-projets{
     margin-right: 5px;
 }
 
@@ -618,14 +698,14 @@ main .competences-section{
     text-align: center;
 }
 
-.description-visible .progress-bar-fond, .description-hidden .item .progress-bar-fond{
+.description-visible .progress-bar-fond, .description-hidden .item .progress-bar-fond, .description-visible .progress-bar-fond-projets{
     width: 100%;
     height: 25px;
     background-color: #ffffff;
     border-radius:10px;
 }
 
-.description-visible .progress-bar.percent,.description-hidden .progress-bar.percent{
+.description-visible .progress-bar.percent, .description-hidden .progress-bar.percent, .progress-bar-fond-projets .animate-progress{
     width: 0;
     background-color: #C4DAD2;
     height: 25px;
@@ -633,13 +713,14 @@ main .competences-section{
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+    white-space: nowrap; /*Empêche le texte de se diviser en plusieurs lignes*/
 }
 
 .description-container .description-hidden{
+    background-color: #6A9C89;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -649,13 +730,202 @@ main .competences-section{
     padding: 10px;
 }
 
-.description-hidden .item .caracteristique{
+.description-hidden .item .caracteristique, .description-visible .details{
     width: 26%;
 }
 
-.description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond{
+.description-hidden .item .progress-bar-fond, .description-hidden .item .progress-bar-fond,
+.description-visible .progress-bar-fond-projets{
     width: 74%;
 }
+
+.competences-section .competences-generales-container{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.competences-generales-container .generales-container{
+    display: inline-block;
+}
+
+.competences-generales-container .generales-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.generales-container h4{
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    color: #16423C;
+}
+
+.generales-container .general-container-item{
+    margin-bottom: 40px;
+}
+
+.general-categorie{
+    text-align: justify;
+    font-size: 17px;
+}
+
+.general-categorie .general-item span{
+    font-size: 19px;
+    color: #6A9C89;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/**************************************PAGE PROJETS**************************************/
+
+/*STYLES GENERAUX*/
+main .projets-section{
+    position: relative;
+    /*margin-top: 150px;*/
+    width: 80% !important;
+}
+
+.projets-section .projets-container{
+    width: 100%;
+}
+
+/*Barre de filtres*/
+.projets-container .bar-filtres{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.bar-filtres h3{
+    margin-right: 5px;
+}
+
+.bar-filtres .filtre-langages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-end;
+    width: 250px;
+}
+
+.filtre-langages .filtre-container{
+    margin: 0 5px 5px 0;
+}
+
+/*Projets*/
+.projets-elements{
+    margin-top: 50px;
+}
+
+.projets-elements .message-container{
+    display: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.absolute-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.absolute-item .texte-absolute2{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 0 0;
+    border-radius: 25px;
+    padding: 1px 5px;
+}
+
+.texte-absolute2{
+    font-size: 15px;
+}
+
+.description-visible button{
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E9EFEC;
+}
+
+/*Panneau latéral*/
+.panneaux-container{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    height: 600px; /* Hauteur pour activer le défilement */
+    width: 500px;
+    background-color: #6A9C89;
+    z-index: 50;
+    margin-top: 100px;
+    overflow-y: auto; /* Barre de défilement */
+}
+
+.panneaux-container.open{
+    display: block;
+}
+
+.panneaux-container .panneau-lateral{
+    margin: 10px 10px;
+}
+
+.panneau-lateral .closeBtn{
+    position: fixed;
+    top: 102px;
+    background-color: var(--blanc-casse);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.panneau-lateral .introduction{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.introduction h2{
+    margin-bottom: 15px;
+}
+
+.introduction p{
+    margin-bottom: 30px;
+}
+
+.introduction video{
+    width: 100%;
+    height: auto;
+}
+
+.panneau-lateral .explications{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.panneau-lateral .gallerie-medias{
+    margin-top: 50px;
+}
+
+.gallerie-medias h3{
+    margin-bottom: 15px;
+}
+.gallerie-medias img, .gallerie-medias video{
+    width: 100px;
+    height: 100px;
+}
+
+/**************************************PAGE A PROPOS**************************************/
+
+
 
 /**************************************PAGE CONTACTS**************************************/
 
