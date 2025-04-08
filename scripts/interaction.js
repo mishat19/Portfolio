@@ -1,19 +1,44 @@
 window.onload = function() {
-    // Appeler la fonction pour l'élément avec l'ID 'class'
+    // Message MAJ
     const element = document.getElementById('class');
     if (element) {
         changeUpdateDate(element);
     }
 
+    // Page PROJETS - bars de progression
     const element2 = document.querySelectorAll('.progress-bar-fond-projets .progress-bar-projets');
     element2.forEach(function(bar){
         animateProgressBarProjets(bar);
     })
 
+    // Page COMPETENCES - bars de progression
     const progressBarElement = document.querySelectorAll('.percent');
-
     progressBarElement.forEach(function(progressBarElement){
         animateProgressBar(progressBarElement);
+    });
+
+    // Page PROJETS - filtre de langages
+    const langages = document.querySelectorAll('.filtre-container input[type="checkbox"]');
+    const checkboxTout = langages[8]; // La case "Tout"
+
+    langages.forEach((langage, index) => {
+        langage.addEventListener('change', () => {
+            if (index !== 8 && langage.checked) {
+                checkboxTout.checked = false;
+            }
+            filtreLangage();
+        });
+    });
+
+    checkboxTout.addEventListener('change', () => {
+        if (checkboxTout.checked) {
+            langages.forEach((langage, index) => {
+                if (index !== 8) {
+                    langage.checked = false;
+                }
+            });
+        }
+        filtreLangage();
     });
 };
 
@@ -70,44 +95,43 @@ function changeUpdateDate(element) {
     }
 }
 
-const verifTout = () =>{
-    const langage = document.querySelector('.filtre-container input[type="checkbox"][name="tout"]');
-    langage.checked = !langage.checked;
-}
-
 function filtreLangage() {
-    const langages = document.querySelectorAll('.filtre-container input');
+    const langages = document.querySelectorAll('.filtre-container input[type="checkbox"]');
     const projets = document.querySelectorAll('.langages-container .langage-item');
-
     const message = document.querySelector('.langages-container .message-container');
+    let projetVisible = false;
 
-    if(langages[8].checked){ //Tout
-        projets.forEach(function(projet) {
+    if (langages[8].checked) { // "Tout" est coché
+        projets.forEach(projet => {
             projet.style.display = 'flex';
-        })
+        });
         message.style.display = 'none';
-    } else{
-        projets.forEach(function(projet) {
-            projet.style.display = 'none';
-        })
-        message.style.display = 'block';
+        return;
     }
 
-    if (langages[1].checked) { //CSS
-        projets.forEach((projet) => {
-            const texteAbsoluteElements = projet.querySelectorAll('.item .image-container .absolute-elements .absolute-item .texte-absolute2');
+    projets.forEach(projet => {
+        const texteAbsoluteElements = projet.querySelectorAll('.item .image-container .absolute-elements .absolute-item .texte-absolute2');
+        let contientLangage = false;
 
-            let contientCss = false;
-            texteAbsoluteElements.forEach((element) => {
-                if (element.classList.contains('css')) {
-                    contientCss = true;
+        texteAbsoluteElements.forEach(element => {
+            langages.forEach((langage, index) => {
+                if (index !== 8 && langage.checked && element.classList.contains(langage.id)) {
+                    contientLangage = true;
                 }
             });
-
-            if (!contientCss) {
-                projet.style.display = 'none';
-            }
         });
-        verifTout();
+
+        if (contientLangage) {
+            projet.style.display = 'flex';
+            projetVisible = true;
+        } else {
+            projet.style.display = 'none';
+        }
+    });
+
+    if (projetVisible) {
+        message.style.display = 'none';
+    } else {
+        message.style.display = 'block';
     }
 }
