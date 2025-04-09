@@ -216,7 +216,7 @@ main .main-sections{
     align-items: center;
     width: 80%;
     height: 100%;
-    margin: 20px 2% 100px 2%;
+    margin: 20px auto 100px auto;
 }
 
 .main-sections .main-titres{
@@ -925,6 +925,22 @@ main .projets-section{
 
 /**************************************PAGE A PROPOS**************************************/
 
+main .presentation-section{
+    align-items: flex-start;
+}
+
+.presentation-section .introduction{
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presentation-section .about-articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 
 /**************************************PAGE CONTACTS**************************************/
