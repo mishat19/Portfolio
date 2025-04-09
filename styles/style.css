@@ -967,54 +967,80 @@ main .presentation-section{
 
 /*FORMATION*/
 
-.presentation-section .formation ul, .presentation-section .parcours-professionnel ul{
+.presentation-section .formation ul, .presentation-section .parcours-professionnel ul {
     margin-bottom: 40px;
 }
 
-.presentation-section .formation h4, .presentation-section .parcours-professionnel h4{
+.presentation-section .formation h4, .presentation-section .parcours-professionnel h4 {
     font-size: 25px;
 }
 
-.formation .formation-liste, .parcours-professionnel .parcours-professionnel-liste{
+.formation .formation-liste, .parcours-professionnel .parcours-professionnel-liste {
     display: flex;
     flex-wrap: wrap;
 }
 
-.formation .formation-liste .formation-item, .parcours-professionnel .parcours-professionnel-liste .parcours-item{
-    width: 50%;
+.formation .formation-liste .formation-item, .parcours-professionnel .parcours-professionnel-liste .parcours-item {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
 }
 
-.formation .details, .parcours-professionnel .details{
+.formation .formation-liste .formation-item:first-child, .parcours-professionnel .parcours-professionnel-liste .parcours-item:first-child {
+    margin-right: 30px;
+}
+
+.formation .details, .parcours-professionnel .details {
     margin-left: 5px;
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
     text-align: justify;
 }
 
-.details h5{
+.details h5 {
     text-decoration: underline;
     margin-bottom: 5px;
     font-size: 20px;
     margin-top: 10px;
 }
 
-.details p{
+.details p {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.details .texte{
-    height: 40px;
+.details .texte {
+    height: 50px;
 }
 
-.details .forcing-p{
-    height: 100px;
-    margin-bottom: 20px;
+.details .forcing-p {
+    height: 130px;
 }
 
-.details .texte-explications{
+.details .texte-explications {
     height: auto;
 }
+
+/* Ajout de flexbox pour aligner les sous-catégories */
+.details ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 40px; /* Ajoute une marge en bas pour espacer les sous-catégories */
+}
+
+.details ul li:nth-child(2) {
+    height: 130px;
+}
+
 
 /*PARCOURS PROFESSIONNEL*/
 
