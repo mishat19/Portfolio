@@ -216,7 +216,7 @@ main .main-sections{
     align-items: center;
     width: 80%;
     height: 100%;
-    margin: 20px 2% 100px 2%;
+    margin: 20px auto 100px auto;
 }
 
 .main-sections .main-titres{
@@ -925,6 +925,126 @@ main .projets-section{
 
 /**************************************PAGE A PROPOS**************************************/
 
+main .presentation-section{
+    align-items: flex-start;
+}
+
+.presentation-section .introduction{
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presentation-section .about-articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.about-articles h3{
+    color: #16423C;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+/*COORDONNEES*/
+
+.coordonnees .localisation .coordonnee{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.coordonnees .localisation .coordonnee img{
+    width: 35px;
+}
+
+.coordonnees .localisation .coordonnee p{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/*FORMATION*/
+
+.presentation-section .formation ul, .presentation-section .parcours-professionnel ul{
+    margin-bottom: 40px;
+}
+
+.presentation-section .formation h4, .presentation-section .parcours-professionnel h4{
+    font-size: 25px;
+}
+
+.formation .formation-liste, .parcours-professionnel .parcours-professionnel-liste{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formation .formation-liste .formation-item, .parcours-professionnel .parcours-professionnel-liste .parcours-item{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formation .formation-liste .formation-item:first-child, .parcours-professionnel .parcours-professionnel-liste .parcours-item:first-child{
+    margin-right: 30px;
+}
+
+.formation .details, .parcours-professionnel .details{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: justify;
+}
+
+.details h5{
+    color: var(--vert-pomme);
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.details p, .interet-item p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.details .texte{
+    height: 50px;
+}
+
+.details .forcing-p{
+    height: 130px;
+}
+
+.details .texte-explications{
+    height: auto;
+}
+
+/* Alignement des sous-catégories */
+.details ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 40px; /* Ajoute une marge en bas pour espacer les sous-catégories */
+}
+
+.details ul li:nth-child(2){
+    height: 130px;
+}
+
+
+/*PARCOURS PROFESSIONNEL*/
 
 
 /**************************************PAGE CONTACTS**************************************/
