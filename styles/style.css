@@ -940,7 +940,83 @@ main .presentation-section{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 50px;
 }
+
+.about-articles h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+/*COORDONNEES*/
+
+.coordonnees .localisation .coordonnee{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.coordonnees .localisation .coordonnee img{
+    width: 35px;
+}
+
+.coordonnees .localisation .coordonnee p{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/*FORMATION*/
+
+.presentation-section .formation ul, .presentation-section .parcours-professionnel ul{
+    margin-bottom: 40px;
+}
+
+.presentation-section .formation h4, .presentation-section .parcours-professionnel h4{
+    font-size: 25px;
+}
+
+.formation .formation-liste, .parcours-professionnel .parcours-professionnel-liste{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formation .formation-liste .formation-item, .parcours-professionnel .parcours-professionnel-liste .parcours-item{
+    width: 50%;
+}
+
+.formation .details, .parcours-professionnel .details{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 80%;
+    text-align: justify;
+}
+
+.details h5{
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.details p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.details .texte{
+    height: 40px;
+}
+
+.details .forcing-p{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.details .texte-explications{
+    height: auto;
+}
+
+/*PARCOURS PROFESSIONNEL*/
 
 
 /**************************************PAGE CONTACTS**************************************/
