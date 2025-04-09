@@ -2,11 +2,12 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathis Brongniart - A propos</title>
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/interaction.js"></script>
   </head>
   <body>
     <nav>
@@ -42,14 +43,36 @@
         </div>
       </div>
 
-      <section class="main-sections presentation-section">
-        <article class="introduction">
+      <div class="main-sections presentation-section">
+        <div class="introduction">
           <img src="../images/logo.png" alt="Logo de Mishat" class="introduction-logo-tete">
           <p class="introduction-texte">Je suis actuellement en première année de <b>BUT Informatique</b> au sein de l'<b>IUT d'Amiens</b>
             et bien que je ne sois qu'un débutant, j'ai une <i>ambition débordante</i>.<br>
             Cette première année de formation m'aura permis de me donner les <i>clés</i> de la réussite grâce à des bases <b>diverses et variées</b>
             en langages <b>Back End</b> notamment, mais aussi dans les <b>outils de développement</b>.</p>
+        </div>
+
+        <article class="about-articles interets">
+          <h3>Centres d'intérêt</h3>
+          <div class="interets-container">
+            <ul class="interets-liste">
+              <li class="interet-item">
+                <p>Je dédie une grande partie de mon temps à me <b>cultiver</b> dans de nombreux domaines comme l'<b>histoire</b>, la <b>géopolitique</b>,
+                  les <b>sciences</b> et bien évidemment sur l'<b>informatique</b>. Je suis un amoureux de la <i>culture et du savoir</i>.</p>
+              </li>
+              <li class="interet-item">
+                <p>Le savoir étant ma <i>source de vie</i>, il est de ce fait important pour moi de développer constamment mes compétences dans le domaine de la
+                <b>programmation</b> qui est une partie du <u>futur métier</u> que je souhaite exercer. C'est pour cela que je passe mes journées à coder !
+              </li>
+              <li class="interet-item">
+                <p>Nous connaissons tous le célèbre préjugé sur les <b>geeks</b> : <cite>"Ils ne se lavent pas et ne connaissent pas la lumière du jour"</cite>. Eh bien
+                au regret de décevoir ces personnes-là, je pratique à hauteur de <b>3 séances/semaine</b> de la <b>musculation</b> en salle afin d'être constamment en forme
+                et garder un <b>physique solide</b> au quotidien.</p>
+              </li>
+            </ul>
+          </div>
         </article>
+
         <article class="about-articles coordonnees">
           <h3>Coordonnées</h3>
               <div class="categorie localisation">
@@ -71,6 +94,7 @@
                 </div>
               </div>
         </article>
+
         <article class="about-articles formations">
           <h3>Formation</h3>
           <div class="categorie formation">
@@ -130,6 +154,7 @@
             </ul>
           </div>
         </article>
+
         <article class="about-articles parcours-professionnel">
           <h3>Parcours professionnel</h3>
             <ul class="parcours-professionnel-liste">
@@ -175,14 +200,11 @@
                 </div>
               </li> <!--Vous-->
             </ul>
-          <div class="categorie parcours">
-
-          </div>
         </article>
-      </section>
+      </div>
       <footer>
         <section class="container-footer">
-          <article class="presentation-footer">
+          <div class="presentation-footer">
             <div class="article-logo">
               <img src="../images/logo.png" alt="Logo de Mishat" class="logo">
             </div>
@@ -197,8 +219,8 @@
                 et ce rien qu'en première année.
               </p>
             </div>
-          </article>
-          <article class="informations-footer">
+          </div>
+          <div class="informations-footer">
             <div class="localisation">
               <h4 class="titre-localisation">Localisation</h4>
               <div class="container-localisation">
@@ -237,7 +259,7 @@
                 </div>
               </div>
             </div>
-          </article>
+          </div>
         </section>
         <div class="container-copyright">
           <p class="copyright">&copy;2025 Tous droits réservés, Mathis Brongniart</p>
