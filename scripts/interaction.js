@@ -50,6 +50,8 @@ window.onload = function() {
         activation.addEventListener('click', () => {
             panneau.classList.add('open');
             body.classList.add('no-scroll');
+            //alert(activation.id);
+            panneauContenu(activation.id);
         });
     })
 
@@ -57,7 +59,21 @@ window.onload = function() {
         panneau.classList.remove('open');
         body.classList.remove('no-scroll');
     });
+
+    //Panneau latéral dynamique
+
 };
+
+function panneauContenu(element){
+    const titre = document.querySelector('.panneau-lateral .introduction h2');
+    if(element === "grattage"){
+        titre.innerHTML = "Grattage";
+    } else if (element === "portfolio"){
+        titre.innerHTML = "Portfolio";
+    } else{
+        titre.innerHTML = "{Undefined}";
+    }
+}
 
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;

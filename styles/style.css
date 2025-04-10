@@ -245,6 +245,12 @@ main .main-sections{
     flex-direction: column;
 }
 
+.formation-section .formation-container .titre-global{
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
 .formation-section .formation-container .categorie-container{
     display: flex;
     justify-content: center;
