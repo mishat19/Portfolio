@@ -41,6 +41,8 @@ window.onload = function() {
         filtreLangage();
     });
 
+    //Panneau latéral
+
     const panneau = document.querySelector('.panneaux-container');
     const btnActivation = document.querySelectorAll('.details');
     const btnDesactivation = document.querySelector('.closeBtn');
@@ -61,7 +63,21 @@ window.onload = function() {
     });
 
     //Panneau latéral dynamique
+    const modalContainer = document.querySelector('.visionnage');
+    const modalTriggers = document.querySelectorAll('.modal-trigger');
+    modalTriggers.forEach(modal => {modal.addEventListener('click', toggleModal)});
 
+    function toggleModal() {
+        if(modalContainer.classList.contains('active')) {
+            modalContainer.style.visibility = 'hidden';
+            modalContainer.classList.remove('active');
+        } else{
+            modalContainer.style.visibility = 'visible';
+            modalContainer.classList.add('active');
+            body.classList.add('no-scroll');
+        }
+
+    }
 };
 
 function panneauContenu(element){

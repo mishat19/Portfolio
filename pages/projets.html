@@ -10,361 +10,375 @@
   <script src="../scripts/interaction.js"></script>
 </head>
 <body>
-<nav>
-  <div class="nav-elements">
-    <div class="nav-element nav-logo">
-      <img src="../images/logo.png" alt="Logo de Mishat" class="logo-nav logo-tete">
+  <nav>
+    <div class="nav-elements">
+      <div class="nav-element nav-logo">
+        <img src="../images/logo.png" alt="Logo de Mishat" class="logo-nav logo-tete">
+      </div>
+      <div class="nav-element nav-menu">
+        <ul class="nav-menu-elements">
+          <li class="menu-elements"><a href="../index.html">Accueil</a></li>
+          <li class="menu-elements"><a href="competences.html">Compétences</a></li>
+          <li class="menu-elements"><a href="projets.html">Projets</a></li>
+          <li class="menu-elements"><a href="about.html">A propos</a></li>
+          <li class="menu-elements"><a href="contact.html">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="nav-element nav-contacts">
+        <ul class="nav-contacts-elements">
+          <li class="menu-elements"><a href="https://www.linkedin.com/in/mathis-brongniart-44715b279" class="lien-sites" target="_blank"><img src="../images/linkedin-logo.png" alt="Logo Linkedin" class="logo-nav logo-reseau"></a></li>
+          <li class="menu-elements"><a href="https://discord.com/invite/45MwCv4DGW" class="lien-sites" target="_blank"><img src="../images/discord-logo.png" alt="Logo Discord" class="logo-nav logo-reseau"></a></li>
+          <li class="menu-elements"><a href="https://x.com/mishatR19" class="lien-sites" target="_blank"><img src="../images/x-logo.png" alt="Logo X/Twitter" class="logo-nav logo-reseau"></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="nav-element nav-menu">
-      <ul class="nav-menu-elements">
-        <li class="menu-elements"><a href="../index.html">Accueil</a></li>
-        <li class="menu-elements"><a href="competences.html">Compétences</a></li>
-        <li class="menu-elements"><a href="projets.html">Projets</a></li>
-        <li class="menu-elements"><a href="about.html">A propos</a></li>
-        <li class="menu-elements"><a href="contact.html">Contacts</a></li>
-      </ul>
-    </div>
-    <div class="nav-element nav-contacts">
-      <ul class="nav-contacts-elements">
-        <li class="menu-elements"><a href="https://www.linkedin.com/in/mathis-brongniart-44715b279" class="lien-sites" target="_blank"><img src="../images/linkedin-logo.png" alt="Logo Linkedin" class="logo-nav logo-reseau"></a></li>
-        <li class="menu-elements"><a href="https://discord.com/invite/45MwCv4DGW" class="lien-sites" target="_blank"><img src="../images/discord-logo.png" alt="Logo Discord" class="logo-nav logo-reseau"></a></li>
-        <li class="menu-elements"><a href="https://x.com/mishatR19" class="lien-sites" target="_blank"><img src="../images/x-logo.png" alt="Logo X/Twitter" class="logo-nav logo-reseau"></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<main>
-  <section class="panneaux-container">
-    <div class="panneau-lateral">
-      <button class="closeBtn">X</button>
-      <div class="introduction">
-        <h2>Titre <span style="color:darkred">[CONTENU DYNAMIQUE A VENIR]</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore eaque exercitationem fugiat illo labore neque, optio pariatur placeat possimus quia quos, ratione sed, sequi temporibus ullam unde vitae voluptatibus?</p>
-        <video controls>
-          <source src="#" type="video/mp4">
-          Votre navigateur ne supporte pas la balise vidéo.
-        </video>
-      </div>
-      <div class="explications">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid corporis deserunt dignissimos, doloremque ducimus eaque earum error eveniet fuga ipsa iste iusto labore neque non omnis quia quibusdam rem reprehenderit rerum, sapiente sequi similique unde. A beatae dicta tempore veritatis voluptatum. Assumenda esse fugiat ipsa iure laborum numquam voluptas. Accusantium architecto aut eius nulla perferendis voluptatum? Aperiam ex impedit inventore nulla omnis voluptatibus? Accusamus aliquid aut commodi dicta distinctio eaque facere, fugit nam non officia quo quos suscipit temporibus?
-      </div>
-      <div class="gallerie-medias">
-        <h3>Gallerie de médias</h3>
-        <div class="medias">
-          <a href="#" class="lien-media">
-            <img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
-          </a>
-          <a href="#" class="lien-media">
-            <img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
-          </a>
-          <a href="#" class="lien-media">
-            <img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
-          </a>
+  <main>
+    <section class="visionnage">
+      <div class="overlay">
+        <div class="modal">
+          <button class="close-modal modal-trigger">X</button>
+          <h1>Titre</h1>
+          <div class="media-container">
+            <a href="../images/illustration-programmation.png" target="_blank"><img src="../images/illustration-programmation.png" alt="Image aggrandie" class="image-media">
+            </a>
+            <video controls src="#" class="video-media"></video>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="container-main">
-    <img src="../images/sablier-logo.png" alt="Logo de chargement" class="logo-loading">
-    <div class="loading-container">
-      <p class="texte-loading titre">En cours de création (Portfolio v2)</p>
-      <p id="class" class="texte-loading sous-titre">(Dernière mise à jour : <span class="maj-auto"><b>04/04/2025 - 00h10</b></span>)</p>
-    </div>
-  </div>
+    <section class="panneaux-container">
+      <div class="panneau-lateral">
+        <button class="closeBtn">X</button>
+        <div class="introduction">
+          <h2>Titre <span style="color:darkred">[CONTENU DYNAMIQUE A VENIR]</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore eaque exercitationem fugiat illo labore neque, optio pariatur placeat possimus quia quos, ratione sed, sequi temporibus ullam unde vitae voluptatibus?</p>
+          <video controls>
+            <source src="#" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+        <div class="explications">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid corporis deserunt dignissimos, doloremque ducimus eaque earum error eveniet fuga ipsa iste iusto labore neque non omnis quia quibusdam rem reprehenderit rerum, sapiente sequi similique unde. A beatae dicta tempore veritatis voluptatum. Assumenda esse fugiat ipsa iure laborum numquam voluptas. Accusantium architecto aut eius nulla perferendis voluptatum? Aperiam ex impedit inventore nulla omnis voluptatibus? Accusamus aliquid aut commodi dicta distinctio eaque facere, fugit nam non officia quo quos suscipit temporibus?
+        </div>
+        <div class="gallerie-medias">
+          <h3>Gallerie de médias</h3>
+          <div class="medias">
+            <a href="#" class="lien-media modal-trigger">
+              <img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
+            </a>
+            <a href="#" class="lien-media modal-trigger">
+              <img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
+            </a>
+            <a href="#" class="lien-media modal-trigger">
+              <img src="../images/illustration-programmation.png" alt="Illustration principale du projet" class="media media1">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="main-sections projets-section">
-    <h2 class="main-titres container-titre">Mes projets</h2>
-    <article class="projets-container">
-      <div class="bar-filtres">
-        <h3>Filtres :</h3>
-        <div class="filtre-langages">
-          <div class="filtre-container">
-            <input type="checkbox" name="html" id="html">
-            <label for="html">HTML</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="css" id="css">
-            <label for="css">CSS</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="javascript" id="javascript">
-            <label for="javascript">JavaScript</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="sql" id="sql">
-            <label for="sql">SQL</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="php" id="php">
-            <label for="php">PHP</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="python" id="python">
-            <label for="python">Python</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="cpp" id="cpp">
-            <label for="cpp">C++</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="cs" id="cs">
-            <label for="cs">C#</label>
-          </div>
-          <div class="filtre-container">
-            <input type="checkbox" name="tout" id="all" checked>
-            <label for="all">Tout</label>
-          </div>
-        </div>
+    <div class="container-main">
+      <img src="../images/sablier-logo.png" alt="Logo de chargement" class="logo-loading">
+      <div class="loading-container">
+        <p class="texte-loading titre">En cours de création (Portfolio v2)</p>
+        <p id="class" class="texte-loading sous-titre">(Dernière mise à jour : <span class="maj-auto"><b>04/04/2025 - 00h10</b></span>)</p>
       </div>
-      <div class="projets-elements">
-        <div class="message-container">
-          <p>Aucun projet à afficher</p>
-        </div>
-        <div class="projet-item">
-          <div class="item">
-            <div class="image-container">
-              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
-              <div class="absolute-elements">
-                <div class="absolute-item">
-                  <div class="texte-absolute2 html">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">HTML</p>
-                  </div>
-                  <div class="texte-absolute2 css">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">CSS</p>
-                  </div>
-                  <div class="texte-absolute2 javascript">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">JavaScript</p>
-                  </div>
-                </div>
-                <div class="texte-absolute-titre">
-                  <p class="texte-titre">Portfolio v2</p>
-                </div>
-              </div>
-            </div>
-            <div class="description-container">
-              <div class="description-visible">
-                <div class="progress-bar-fond-projets">
-                  <div class="progress-bar-projets animate-progress 60">En cours</div>
-                </div>
-                <button class="details" id="portfolio">Détails</button>
-              </div>
-            </div>
-          </div>
-        </div> <!--Portfolio-->
-        <div class="projet-item">
-          <div class="item">
-            <div class="image-container">
-              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
-              <div class="absolute-elements">
-                <div class="absolute-item">
-                  <div class="texte-absolute2 javascript">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">JavaScript</p>
-                  </div>
-                </div>
-                <div class="texte-absolute-titre">
-                  <p class="texte-titre">Grattage</p>
-                </div>
-              </div>
-            </div>
-            <div class="description-container">
-              <div class="description-visible">
-                <div class="progress-bar-fond-projets">
-                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
-                </div>
-                <button class="details" id="grattage">Détails</button>
-              </div>
-            </div>
-          </div>
-        </div> <!--Carte à gratter-->
-        <div class="projet-item">
-          <div class="item">
-            <div class="image-container">
-              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
-              <div class="absolute-elements">
-                <div class="absolute-item">
-                  <div class="texte-absolute2 html">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">HTML</p>
-                  </div>
-                  <div class="texte-absolute2 css">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">CSS</p>
-                  </div>
-                  <div class="texte-absolute2 sql">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">SQL</p>
-                  </div>
-                  <div class="texte-absolute2 php">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">PHP</p>
-                  </div>
-                </div>
-                <div class="texte-absolute-titre">
-                  <p class="texte-titre">Messagerie</p>
-                </div>
-              </div>
-            </div>
-            <div class="description-container">
-              <div class="description-visible">
-                <div class="progress-bar-fond-projets">
-                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
-                </div>
-                <button class="details" id="messagerie">Détails</button>
-              </div>
-            </div>
-          </div>
-        </div> <!--Messagerie-->
-        <div class="projet-item">
-          <div class="item">
-            <div class="image-container">
-              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
-              <div class="absolute-elements">
-                <div class="absolute-item">
-                  <div class="texte-absolute2 python">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">Python</p>
-                  </div>
-                </div>
-                <div class="texte-absolute-titre">
-                  <p class="texte-titre">Sudoku</p>
-                </div>
-              </div>
-            </div>
-            <div class="description-container">
-              <div class="description-visible">
-                <div class="progress-bar-fond-projets">
-                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
-                </div>
-                <button class="details" id="sudoku">Détails</button>
-              </div>
-            </div>
-          </div>
-        </div> <!--Sudoku-->
-        <div class="projet-item">
-          <div class="item">
-            <div class="image-container">
-              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
-              <div class="absolute-elements">
-                <div class="absolute-item">
-                  <div class="texte-absolute2 cpp">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">C</p>
-                  </div>
-                </div>
-                <div class="texte-absolute-titre">
-                  <p class="texte-titre">GPS</p>
-                </div>
-              </div>
-            </div>
-            <div class="description-container">
-              <div class="description-visible">
-                <div class="progress-bar-fond-projets">
-                  <div class="progress-bar-projets animate-progress 100">Terminé</div>
-                </div>
-                <button class="details" id="gps">Détails</button>
-              </div>
-            </div>
-          </div>
-        </div> <!--GPS-->
-        <div class="projet-item">
-          <div class="item">
-            <div class="image-container">
-              <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
-              <div class="absolute-elements">
-                <div class="absolute-item">
-                  <div class="texte-absolute2 cs">
-                    <span class="point-absolute">&#9679;</span>
-                    <p class="texte">C#</p>
-                  </div>
-                </div>
-                <div class="texte-absolute-titre">
-                  <p class="texte-titre">Gestion Contacts</p>
-                </div>
-              </div>
-            </div>
-            <div class="description-container">
-              <div class="description-visible">
-                <div class="progress-bar-fond-projets">
-                  <div class="progress-bar-projets animate-progress 40">En cours</div>
-                </div>
-                <button class="details" id="gestion-contacts">Détails</button>
-              </div>
-            </div>
-          </div>
-        </div> <!--Gestion contacts-->
-      </div>
-    </article>
-  </section>
-</main>
+    </div>
 
-<footer>
-  <section class="container-footer">
-    <div class="presentation-footer">
-      <div class="article-logo">
-        <img src="../images/logo.png" alt="Logo de Mishat" class="logo">
+    <section class="main-sections projets-section">
+      <h2 class="main-titres container-titre">Mes projets</h2>
+      <article class="projets-container">
+        <div class="bar-filtres">
+          <h3>Filtres :</h3>
+          <div class="filtre-langages">
+            <div class="filtre-container">
+              <input type="checkbox" name="html" id="html">
+              <label for="html">HTML</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="css" id="css">
+              <label for="css">CSS</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="javascript" id="javascript">
+              <label for="javascript">JavaScript</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="sql" id="sql">
+              <label for="sql">SQL</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="php" id="php">
+              <label for="php">PHP</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="python" id="python">
+              <label for="python">Python</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="cpp" id="cpp">
+              <label for="cpp">C++</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="cs" id="cs">
+              <label for="cs">C#</label>
+            </div>
+            <div class="filtre-container">
+              <input type="checkbox" name="tout" id="all" checked>
+              <label for="all">Tout</label>
+            </div>
+          </div>
+        </div>
+        <div class="projets-elements">
+          <div class="message-container">
+            <p>Aucun projet à afficher</p>
+          </div>
+          <div class="projet-item">
+            <div class="item">
+              <div class="image-container">
+                <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+                <div class="absolute-elements">
+                  <div class="absolute-item">
+                    <div class="texte-absolute2 html">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">HTML</p>
+                    </div>
+                    <div class="texte-absolute2 css">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">CSS</p>
+                    </div>
+                    <div class="texte-absolute2 javascript">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">JavaScript</p>
+                    </div>
+                  </div>
+                  <div class="texte-absolute-titre">
+                    <p class="texte-titre">Portfolio v2</p>
+                  </div>
+                </div>
+              </div>
+              <div class="description-container">
+                <div class="description-visible">
+                  <div class="progress-bar-fond-projets">
+                    <div class="progress-bar-projets animate-progress 60">En cours</div>
+                  </div>
+                  <button class="details" id="portfolio">Détails</button>
+                </div>
+              </div>
+            </div>
+          </div> <!--Portfolio-->
+          <div class="projet-item">
+            <div class="item">
+              <div class="image-container">
+                <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+                <div class="absolute-elements">
+                  <div class="absolute-item">
+                    <div class="texte-absolute2 javascript">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">JavaScript</p>
+                    </div>
+                  </div>
+                  <div class="texte-absolute-titre">
+                    <p class="texte-titre">Grattage</p>
+                  </div>
+                </div>
+              </div>
+              <div class="description-container">
+                <div class="description-visible">
+                  <div class="progress-bar-fond-projets">
+                    <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                  </div>
+                  <button class="details" id="grattage">Détails</button>
+                </div>
+              </div>
+            </div>
+          </div> <!--Carte à gratter-->
+          <div class="projet-item">
+            <div class="item">
+              <div class="image-container">
+                <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+                <div class="absolute-elements">
+                  <div class="absolute-item">
+                    <div class="texte-absolute2 html">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">HTML</p>
+                    </div>
+                    <div class="texte-absolute2 css">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">CSS</p>
+                    </div>
+                    <div class="texte-absolute2 sql">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">SQL</p>
+                    </div>
+                    <div class="texte-absolute2 php">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">PHP</p>
+                    </div>
+                  </div>
+                  <div class="texte-absolute-titre">
+                    <p class="texte-titre">Messagerie</p>
+                  </div>
+                </div>
+              </div>
+              <div class="description-container">
+                <div class="description-visible">
+                  <div class="progress-bar-fond-projets">
+                    <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                  </div>
+                  <button class="details" id="messagerie">Détails</button>
+                </div>
+              </div>
+            </div>
+          </div> <!--Messagerie-->
+          <div class="projet-item">
+            <div class="item">
+              <div class="image-container">
+                <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+                <div class="absolute-elements">
+                  <div class="absolute-item">
+                    <div class="texte-absolute2 python">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">Python</p>
+                    </div>
+                  </div>
+                  <div class="texte-absolute-titre">
+                    <p class="texte-titre">Sudoku</p>
+                  </div>
+                </div>
+              </div>
+              <div class="description-container">
+                <div class="description-visible">
+                  <div class="progress-bar-fond-projets">
+                    <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                  </div>
+                  <button class="details" id="sudoku">Détails</button>
+                </div>
+              </div>
+            </div>
+          </div> <!--Sudoku-->
+          <div class="projet-item">
+            <div class="item">
+              <div class="image-container">
+                <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+                <div class="absolute-elements">
+                  <div class="absolute-item">
+                    <div class="texte-absolute2 cpp">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">C</p>
+                    </div>
+                  </div>
+                  <div class="texte-absolute-titre">
+                    <p class="texte-titre">GPS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="description-container">
+                <div class="description-visible">
+                  <div class="progress-bar-fond-projets">
+                    <div class="progress-bar-projets animate-progress 100">Terminé</div>
+                  </div>
+                  <button class="details" id="gps">Détails</button>
+                </div>
+              </div>
+            </div>
+          </div> <!--GPS-->
+          <div class="projet-item">
+            <div class="item">
+              <div class="image-container">
+                <img src="../images/illustration-programmation.png" alt="Image Langage" class="image">
+                <div class="absolute-elements">
+                  <div class="absolute-item">
+                    <div class="texte-absolute2 cs">
+                      <span class="point-absolute">&#9679;</span>
+                      <p class="texte">C#</p>
+                    </div>
+                  </div>
+                  <div class="texte-absolute-titre">
+                    <p class="texte-titre">Gestion Contacts</p>
+                  </div>
+                </div>
+              </div>
+              <div class="description-container">
+                <div class="description-visible">
+                  <div class="progress-bar-fond-projets">
+                    <div class="progress-bar-projets animate-progress 40">En cours</div>
+                  </div>
+                  <button class="details" id="gestion-contacts">Détails</button>
+                </div>
+              </div>
+            </div>
+          </div> <!--Gestion contacts-->
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <section class="container-footer">
+      <div class="presentation-footer">
+        <div class="article-logo">
+          <img src="../images/logo.png" alt="Logo de Mishat" class="logo">
+        </div>
+        <div class="presentation">
+          <h2>Étudiant en BUT Informatique</h2>
+          <p class="texte-presentation">
+            Je m'appelle <b>Mathis Brongniart</b>, j'ai 18 ans
+            et je suis actuellement en première année de <b>BUT Informatique</b>
+            à l'IUT d'Amiens.<br><br>
+            Si je suis dans cette formation, c'est pour la <b>richesse</b> des cours
+            <b>pratiques</b> et des projets concrets en HTML/CSS, SQL, C, C++ ou encore en C#
+            et ce rien qu'en première année.
+          </p>
+        </div>
       </div>
-      <div class="presentation">
-        <h2>Étudiant en BUT Informatique</h2>
-        <p class="texte-presentation">
-          Je m'appelle <b>Mathis Brongniart</b>, j'ai 18 ans
-          et je suis actuellement en première année de <b>BUT Informatique</b>
-          à l'IUT d'Amiens.<br><br>
-          Si je suis dans cette formation, c'est pour la <b>richesse</b> des cours
-          <b>pratiques</b> et des projets concrets en HTML/CSS, SQL, C, C++ ou encore en C#
-          et ce rien qu'en première année.
-        </p>
-      </div>
-    </div>
-    <div class="informations-footer">
-      <div class="localisation">
-        <h4 class="titre-localisation">Localisation</h4>
-        <div class="container-localisation">
-          <div class="coordonnee">
-            <img src="../images/localisation-logo.png" alt="Logo Adresse" class="logo-coordonnee">
-            <p class="texte-logo">IUT d'Amiens</p>
+      <div class="informations-footer">
+        <div class="localisation">
+          <h4 class="titre-localisation">Localisation</h4>
+          <div class="container-localisation">
+            <div class="coordonnee">
+              <img src="../images/localisation-logo.png" alt="Logo Adresse" class="logo-coordonnee">
+              <p class="texte-logo">IUT d'Amiens</p>
+            </div>
+            <div class="coordonnee">
+              <img src="../images/tel-logo.png" alt="Logo Tel" class="logo-coordonnee">
+              <p class="texte-logo">[BIENTÔT]</p>
+            </div>
+            <div class="coordonnee">
+              <img src="../images/mail-logo.png" alt="Logo Mail" class="logo-coordonnee">
+              <p class="texte-logo">mathis.brongniart[at]gmail.com</p>
+            </div>
+            <div class="coordonnee">
+              <img src="../images/site-logo.png" alt="Logo Site Internet" class="logo-coordonnee">
+              <p class="texte-logo"><a href="https://mishat19.github.io/Portfolio/" class="lien-site">Mon site</a></p>
+            </div>
           </div>
-          <div class="coordonnee">
-            <img src="../images/tel-logo.png" alt="Logo Tel" class="logo-coordonnee">
-            <p class="texte-logo">[BIENTÔT]</p>
-          </div>
-          <div class="coordonnee">
-            <img src="../images/mail-logo.png" alt="Logo Mail" class="logo-coordonnee">
-            <p class="texte-logo">mathis.brongniart[at]gmail.com</p>
-          </div>
-          <div class="coordonnee">
-            <img src="../images/site-logo.png" alt="Logo Site Internet" class="logo-coordonnee">
-            <p class="texte-logo"><a href="https://mishat19.github.io/Portfolio/" class="lien-site">Mon site</a></p>
+        </div>
+        <div class="reseaux-sociaux">
+          <h4 class="titre-reseaux-sociaux">Réseaux</h4>
+          <div class="container-reseaux">
+            <div class="reseau">
+              <img src="../images/linkedin-logo.png" alt="Logo Linkedin" class="logo-reseau">
+              <a href="https://www.linkedin.com" class="texte-logo" target="_blank">LinkedIn</a>
+            </div>
+            <div class="reseau">
+              <img src="../images/discord-logo.png" alt="Logo Discord" class="logo-reseau">
+              <a href="https://discord.com" class="texte-logo" target="_blank">Discord</a>
+            </div>
+            <div class="reseau">
+              <img src="../images/x-logo.png" alt="Logo X/Twiter" class="logo-reseau">
+              <a href="https://x.com/mishatR19" class="texte-logo" target="_blank">X</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="reseaux-sociaux">
-        <h4 class="titre-reseaux-sociaux">Réseaux</h4>
-        <div class="container-reseaux">
-          <div class="reseau">
-            <img src="../images/linkedin-logo.png" alt="Logo Linkedin" class="logo-reseau">
-            <a href="https://www.linkedin.com" class="texte-logo" target="_blank">LinkedIn</a>
-          </div>
-          <div class="reseau">
-            <img src="../images/discord-logo.png" alt="Logo Discord" class="logo-reseau">
-            <a href="https://discord.com" class="texte-logo" target="_blank">Discord</a>
-          </div>
-          <div class="reseau">
-            <img src="../images/x-logo.png" alt="Logo X/Twiter" class="logo-reseau">
-            <a href="https://x.com/mishatR19" class="texte-logo" target="_blank">X</a>
-          </div>
-        </div>
-      </div>
+    </section>
+    <div class="container-copyright">
+      <p class="copyright">&copy;2025 Tous droits réservés, Mathis Brongniart</p>
     </div>
-  </section>
-  <div class="container-copyright">
-    <p class="copyright">&copy;2025 Tous droits réservés, Mathis Brongniart</p>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
