@@ -123,7 +123,7 @@ main .sections{
 
 main .demarrage-section {
     position: relative;
-    height: calc(700px - 100px);
+    height: 50vh;
     margin-top: 100px;
     margin-bottom: 100px;
     width: 100%;
@@ -274,8 +274,8 @@ main .main-sections{
 .categorie-container .categorie-image img{
     border: 1px solid black;
     border-radius: 5px;
-    width: 400px;
-    height: 200px;
+    width: 90%;
+    height: 90%;
 }
 
 /*STYLES SECTION BLOG*/
@@ -490,13 +490,6 @@ footer .copyright{
 
 .container-main .loading-container .sous-titre{
     font-size: 20px;
-}
-
-/*MEDIA QUERIES*/
-@media screen and (max-width: 1600px){
-    main .demarrage-section{
-        height: calc(100vh - 100px);
-    }
 }
 
 /**************************************PAGE COMPETENCES**************************************/
@@ -1250,6 +1243,7 @@ main .contact-section{
 
 /*Laptops*/
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
+    /*PAGE ACCUEIL*/
     
 }
 
@@ -1272,10 +1266,6 @@ main .contact-section{
 
     .nav-contacts .nav-contacts-elements img{
         width: 50px;
-    }
-
-    main .demarrage-section{
-        height: 50vh;
     }
 
     .demarrage-container .texte-container .titre{
