@@ -205,6 +205,7 @@ main .presentation-section{
 
 .presentation-section .introduction p{
     font-size: 25px;
+    margin: auto 0;
 }
 
 /*STYLES GENERAUX SECTIONS*/
@@ -990,6 +991,11 @@ main .visionnage.active{
 .gallerie-medias h3{
     margin-bottom: 15px;
 }
+
+.gallerie-medias a{
+    text-decoration: none;
+}
+
 .gallerie-medias img, .gallerie-medias video{
     width: 100px;
     height: 100px;
@@ -1251,6 +1257,27 @@ main .contact-section{
 @media only screen and (min-width: 1801px) {
     /*PAGE ACCUEIL*/
 
+    nav{
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-elements .nav-logo img{
+        width: 100px;
+    }
+
+    .nav-menu .nav-menu-elements a{
+        font-size: 25px;
+    }
+
+    .nav-contacts .nav-contacts-elements img{
+        width: 50px;
+    }
+
+    main .demarrage-section{
+        height: 50vh;
+    }
+
     .demarrage-container .texte-container .titre{
         font-size: 70px;
     }
@@ -1262,9 +1289,141 @@ main .contact-section{
     .demarrage-container .texte-container .button-apropos{
         font-size: 25px;
     }
-}
 
-/*Ultra larges (21:9)*/
+    .presentation-section .introduction .introduction-logo-tete{
+        width: 200px;
+    }
+
+    .presentation-section .introduction{
+        align-items: center;
+    }
+
+    .presentation-section .introduction p{
+        margin: auto 0;
+        font-size: 30px;
+    }
+
+    .main-sections .main-titres{
+        font-size: 3rem;
+    }
+
+    .formation-section .formation-container .titre-global, .formation-container p{
+        font-size: 30px;
+    }
+
+    .categorie-container .categorie-image img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .faq-item .faq-question, .faq-item .faq-answer{
+        font-size: 30px;
+    }
+
+    .container-footer{
+        font-size: 25px;
+    }
+
+    .presentation-footer .presentation h2{
+        font-size: 2.5rem;
+    }
+
+    .presentation-footer .presentation .texte-presentation, .localisation h4, .reseaux-sociaux h4, footer .copyright{
+        font-size: 1.6rem;
+    }
+
+    .container-localisation .coordonnee .logo-coordonnee{
+        width: 40px;
+    }
+
+    .logo-reseau{
+        width: 40px;
+    }
+
+    /*PAGE COMPETENCES*/
+
+    .competences-programmation-container h3, .competences-generales-container h3, .reseaux-sociaux h3{
+        font-size: 2rem;
+    }
+
+    .generales-container h4{
+        font-size: 1.8rem;
+    }
+
+    .general-categorie .general-item span, .general-categorie{
+        font-size: 1.6rem;
+    }
+
+    /*PAGE PROJETS*/
+    .projets-container .bar-filtres{
+        font-size: 1.6rem;
+    }
+
+    .bar-filtres .filtre-langages{
+        width: 350px;
+    }
+
+    .absolute-item .texte-absolute2{
+        font-size: 17px;
+        padding: 2px 5px;
+    }
+
+    .description-hidden .item .caracteristique, .description-visible .details{
+        font-size: 1rem;
+    }
+
+    .panneaux-container{
+        width: 600px;
+        height: 100vh;
+        font-size: 1.2rem;
+    }
+
+    .introduction h2{
+        font-size: 2.2rem;
+    }
+    
+    .panneau-lateral .introduction{
+        margin-top: 100px;
+    }
+
+    .panneau-lateral .closeBtn{
+        top: 140px;
+        margin-bottom: 10px;
+    }
+
+    .gallerie-medias h3{
+        font-size: 1.8rem;
+    }
+
+    .gallerie-medias img, .gallerie-medias video{
+        width: 150px;
+        height: 150px;
+    }
+
+    /*PAGE A PROPOS*/
+    .about-articles h3{
+        font-size: 2.2rem;
+    }
+
+    .details p, .interet-item p, .coordonnees .localisation .coordonnee, .categorie .localisation{
+        font-size: 1.6rem;
+    }
+
+    /*PAGE CONTACTS*/
+    .contact-section .contact-article{
+        font-size: 1.6rem;
+    }
+
+    .form-group button{
+        font-size: 1.2rem;
+    }
+
+    .info-container .reseaux-sociaux .logo-reseau{
+        width: 50px;
+    }
+
+/*Ultra larges (21:9)
 @media only screen and (min-width: 2560px) {
     
+}*/
 }
