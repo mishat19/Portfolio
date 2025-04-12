@@ -1219,3 +1219,52 @@ main .contact-section{
 .reseaux-sociaux .container-reseaux{
     margin-right: 20px;
 }
+
+/**************************************MEDIA QUERIES**************************************/
+
+/*Smartphones en portrait*/
+@media only screen and (max-width: 480px) {
+    
+}
+
+/*Smartphones en portrait*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+/*Tablettes en portrait*/
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    
+}
+
+/*Tablettes en paysage*/
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    
+}
+
+/*Laptops*/
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+    
+}
+
+/*Desktops*/
+@media only screen and (min-width: 1801px) {
+    /*PAGE ACCUEIL*/
+
+    .demarrage-container .texte-container .titre{
+        font-size: 70px;
+    }
+
+    .demarrage-container .texte-container .texte{
+        font-size: 30px;
+    }
+
+    .demarrage-container .texte-container .button-apropos{
+        font-size: 25px;
+    }
+}
+
+/*Ultra larges (21:9)*/
+@media only screen and (min-width: 2560px) {
+    
+}
