@@ -214,17 +214,19 @@ function panneauContenu(element){
         })
     } else if (element === "gps"){
         titre.innerHTML = "GPS";
-        objet.innerHTML = "Le <b>Portfolio</b> a été mon tout premier projet en tant que <i>programmeur</i>. Ceci est la <b>deuxième version</b> de mon site." +
-            " Je préfère vous épargner une présentation de la toute première version...";
+        objet.innerHTML = "Dans le cadre d'une de nos <abbr title='Système Apprentissage Évalué'>SAE</abbr> de <b>Premier semestre</b>, nous avons dû réaliser un" +
+            " <b>système GPS</b> qui calcule des distances à <b>vol d'oiseau</b> en <b>langage C</b>. Nous étions en équipe de <b>4 personnes</b> bien que j'ai été " +
+            " le seul du groupe à réaliser cette SAE.";
 
         const source = video.querySelector('source');
         source.src = '../images/gps-video.mp4';
         video.load();
 
-        explications.innerHTML = "Pour cette <u>v2</u> de mon Portfolio, j'ai voulu mettre l'accent sur le rendu graphique afin de pouvoir montrer mes compétences" +
-            " en <b>programmation web</b> sur un site qui se veut le plus <b>professionnel</b> possible bien que j'en suis encore loin. Mais je continue (et continuerai)" +
-            " à en apprendre tous les jours de ma <b>carrière d'étudiant</b> et de <b>futur programmeur</b> ! <br> J'ai essayé de mettre ce qui selon moi était le plus important afin que" +
-            " vous puissiez me connaître et avoir un <b>premier aperçu</b> de mes capacités et du travail que je fournis.";
+        explications.innerHTML = "Ce programme permet d'afficher toutes les données d'un <b>fichier CSV</b> dans un affichage structuré. Avec cela, nous avons dû" +
+            "mettre en place <b>différents systèmes</b> notamment l'ajout, la suppression et la modification d'une ville. Puis, les <b>systèmes plus complexes</b> avec particulièrement :" +
+            " la distance entre deux villes, la distance par rapport à une ville donnée par l'utilisateur (à l'instar de <b>Google Maps</b>) et enfin par rapport à la distance" +
+            " du <b>Pôle Nord</b>. <br> Cette première SAE de <b>BUT Informatique</b> m'aura permis de découvrir la manière de s'organiser derrière un <b>cahier des charges</b> précis et une <b>deadline</b>" +
+            " imposée qui était relativement proche.";
 
         medias.forEach(media => {
             if(media.classList.contains('media1')){
@@ -232,7 +234,7 @@ function panneauContenu(element){
             } else if(media.classList.contains('media2')){
                 media.src = '../images/gps-image2.png';
             } else if(media.classList.contains('media3')){
-                media.src = '../images/gps-image3.png';
+                media.style.display = 'none';
             }
         })
     } else{
