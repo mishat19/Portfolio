@@ -102,25 +102,138 @@ function panneauContenu(element){
 
     if(element === "grattage"){
         titre.innerHTML = "Grattage";
-    } else if (element === "portfolio"){
-        titre.innerHTML = "Portfolio";
-        objet.innerHTML = "lorem20";
+        objet.innerHTML = "Réalisation d'un <b>ticket à gratter</b> tout en Javascript. Réalisé en 2024, je souhaitais apprendre ce langage web" +
+            " très utile pour gérer les <b>contenus dynamiques</b> ainsi que pour réaliser des tâches plus <b>complexes</b>.";
 
         const source = video.querySelector('source');
-        source.src = '../images/outro.mp4';
+        source.src = '../images/grattage-video.mp4';
         video.load();
 
-        explications.innerHTML = "lorem80";
+        explications.innerHTML = "Pour ce <b>premier projet</b> en JavaScript, j'ai utilisé très <b>peu d'aide</b> puisque j'avais de bonnes bases grâce à mes cours" +
+            " de <b>NSI</b> de Terminale et que j'ai pu réussir facilement à comprendre la mise en place d'un graphe via une <b>bibliothèque JS</b> et de la gestion des" +
+            " probabilités qui n'étaient que des <b>calculs mathématiques</b>.";
 
         medias.forEach(media => {
             if(media.classList.contains('media1')){
-                media.src = '../images/illustration-front-end.png';
-            } else{
-                media.src = '../images/illustration-back-end.png';
+                media.src = '../images/grattage-image1.png';
+            } else if(media.classList.contains('media2')){
+                media.src = '../images/grattage-image2.png';
+            } else if(media.classList.contains('media3')){
+                media.style.display = 'none';
+            }
+        })
+    } else if (element === "portfolio"){
+        titre.innerHTML = "Portfolio";
+        objet.innerHTML = "Le <b>Portfolio</b> a été mon tout premier projet en tant que <i>programmeur</i>. Ceci est la <b>deuxième version</b> de mon site." +
+            " Je préfère vous épargner une présentation de la toute première version...";
+
+        const source = video.querySelector('source');
+        source.src = '../images/portfolio-video.mp4';
+        video.load();
+
+        explications.innerHTML = "Pour cette <u>v2</u> de mon Portfolio, j'ai voulu mettre l'accent sur le rendu graphique afin de pouvoir montrer mes compétences" +
+            " en <b>programmation web</b> sur un site qui se veut le plus <b>professionnel</b> possible bien que j'en suis encore loin. Mais je continue (et continuerai)" +
+            " à en apprendre tous les jours de ma <b>carrière d'étudiant</b> et de <b>futur programmeur</b> ! <br> J'ai essayé de mettre ce qui selon moi était le plus important afin que" +
+            " vous puissiez me connaître et avoir un <b>premier aperçu</b> de mes capacités et du travail que je fournis.";
+
+        medias.forEach(media => {
+            if(media.classList.contains('media1')){
+                media.src = '../images/portfolio-image1.png';
+            } else if(media.classList.contains('media2')){
+                media.src = '../images/portfolio-image2.png';
+            } else if(media.classList.contains('media3')){
+                media.src = '../images/portfolio-image3.png';
+            }
+        })
+    } else if (element === "messagerie"){
+        titre.innerHTML = "Messagerie";
+        objet.innerHTML = "Le <b>Back End</b> m'a très vite intéressé, car j'ai toujours eu un <i>esprit curieux</i> en quête de comprendre le <b>fonctionnement</b> des systèmes" +
+            " qui m'entoure. C'est pour cette raison que j'ai voulu commencer par le <b>PHP</b>. Pour comprendre le fonctionnement de <b>sites internet complexes</b>.";
+
+        const source = video.querySelector('source');
+        source.src = '../images/messagerie-video.mp4';
+        video.load();
+
+        explications.innerHTML = "Cela n'a pas dû vous échapper lorsque vous avez regardé mes compétences (sinon <a href='competences.html'>Mes Compétences</a>), j'ai" +
+            " peu de notions en PHP, du fait que c'est un langage plus difficile et je n'avais aucun cours qui se basait dessus. J'ai donc suivi un <b>tutoriel YouTube</b>" +
+            " dans le but de découvrir et apprendre le PHP tout en développant une <b>application concrète</b>. <br> Après ce projet, je n'ai pas continué à m'exercer sur ce" +
+            " langage, de ce fait, j'ai <i>perdu mes compétences</i> sur celui-ci bien que je souhaite m'y remettre incessamment sous peu.";
+
+        medias.forEach(media => {
+            if(media.classList.contains('media1')){
+                media.src = '../images/messagerie-image1.png';
+            } else if(media.classList.contains('media2')){
+                media.src = '../images/messagerie-image2.png';
+            } else if(media.classList.contains('media3')){
+                media.style.display = 'none';
+            }
+        })
+    } else if (element === "morpion"){
+        titre.innerHTML = "Morpion";
+        objet.innerHTML = "C'est un projet que j'avais quasiment oublié et qui a failli ne pas apparaître dans cette rubrique de mon site. Néanmoins, mon cerveau a" +
+            " redonné vie à ce projet qui est né du <b>Club Informatique</b> dont j'ai fait partie <b>2 ans</b> de mon lycée avec mon professeur de NSI qui m'a " +
+            "<b>appris beaucoup de choses</b>.";
+
+        const source = video.querySelector('source');
+        source.src = '../images/morpion-video.mp4';
+        video.load();
+
+        explications.innerHTML = "C'est un projet qui m'a été proposé par le professeur de NSI étant chargé du <b>Club Informatique</b> - qui était également mon" +
+            " professeur en cours. J'ai tout de suite était alléché par ce projet puisqu'il traitait de langages que l'on ne voyait pas en cours : <b>SQL & PHP</b>, autrement" +
+            " dis, des <b>langages Back End</b>. <br> Ce Morpion est donc jouable entre <b>2 joueurs</b> en <b><abbr title='Local Area Network'>LAN</abbr></b> ou sur un <b>seul ordinateur</b>" +
+            " (avec 2 navigateurs différents). Le projet n'a <b>aucune charte graphique</b> ni aucune esthétique; cela n'était pas le but du projet de coder du <b>CSS</b>.</b>";
+
+        medias.forEach(media => {
+            if(media.classList.contains('media1')){
+                media.src = '../images/morpion-image1.png';
+            } else if(media.classList.contains('media2')){
+                media.src = '../images/morpion-image2.png';
+            } else if(media.classList.contains('media3')){
+                media.src = '../images/morpion-image3.png';
+            }
+        })
+    } else if (element === "gps"){
+        titre.innerHTML = "GPS";
+        objet.innerHTML = "Le <b>Portfolio</b> a été mon tout premier projet en tant que <i>programmeur</i>. Ceci est la <b>deuxième version</b> de mon site." +
+            " Je préfère vous épargner une présentation de la toute première version...";
+
+        const source = video.querySelector('source');
+        source.src = '../images/gps-video.mp4';
+        video.load();
+
+        explications.innerHTML = "Pour cette <u>v2</u> de mon Portfolio, j'ai voulu mettre l'accent sur le rendu graphique afin de pouvoir montrer mes compétences" +
+            " en <b>programmation web</b> sur un site qui se veut le plus <b>professionnel</b> possible bien que j'en suis encore loin. Mais je continue (et continuerai)" +
+            " à en apprendre tous les jours de ma <b>carrière d'étudiant</b> et de <b>futur programmeur</b> ! <br> J'ai essayé de mettre ce qui selon moi était le plus important afin que" +
+            " vous puissiez me connaître et avoir un <b>premier aperçu</b> de mes capacités et du travail que je fournis.";
+
+        medias.forEach(media => {
+            if(media.classList.contains('media1')){
+                media.src = '../images/gps-image1.png';
+            } else if(media.classList.contains('media2')){
+                media.src = '../images/gps-image2.png';
+            } else if(media.classList.contains('media3')){
+                media.src = '../images/gps-image3.png';
             }
         })
     } else{
-        titre.innerHTML = "{Undefined}";
+        titre.innerHTML = "Nouveau projet prochain";
+        objet.innerHTML = "Aucune information pour le moment";
+
+        const source = video.querySelector('source');
+        source.src = '';
+        video.load();
+
+        explications.innerHTML = "Description à venir";
+
+        medias.forEach(media => {
+            if(media.classList.contains('media1')){
+                media.style.display = 'none';
+            } else if(media.classList.contains('media2')){
+                media.style.display = 'none';
+            } else if(media.classList.contains('media3')){
+                media.style.display = 'none';
+            }
+        })
     }
 }
 
