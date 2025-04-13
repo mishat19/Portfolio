@@ -37,14 +37,13 @@ nav {
     background-color: #6A9C89;
     width: 100%;
     height: 100px;
-    /*margin-bottom: 400px;*/
     top: 0;
     z-index: 100;
     border-bottom: 1px solid #16423C;
     box-shadow: 1px 1px 1px #16423C;
 }
 
-nav .nav-elements{
+nav .nav-elements {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,33 +51,31 @@ nav .nav-elements{
     height: 100%;
 }
 
-nav .nav-logo{
+nav .nav-logo {
     width: 25%;
 }
 
-nav .logo-tete{
+nav .logo-tete, .sidebar .logo-tete {
     width: 70px;
 }
 
-/*Styles navbar - milieu*/
-
-nav .nav-menu{
+nav .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
 
-nav .nav-menu ul{
+nav .nav-menu ul {
     display: flex;
     justify-content: space-between;
 }
 
-nav .nav-menu ul li{
+nav .nav-menu ul li {
     list-style: none;
 }
 
-nav .nav-menu a{
+nav .nav-menu a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
@@ -86,23 +83,78 @@ nav .nav-menu a{
     padding: 10px;
 }
 
-/*Styles navbar - fin*/
-
-nav .nav-contacts{
+nav .nav-contacts {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 25%;
 }
 
-nav .nav-contacts ul{
+nav .nav-contacts ul {
     display: flex;
     justify-content: space-between;
 }
 
-nav .nav-contacts ul li{
+nav .nav-contacts ul li {
     list-style: none;
     margin-left: 10px;
+}
+
+nav .menu-icon {
+    display: none; /* caché sur desktop */
+    cursor: pointer;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 250px;
+    height: 100%;
+    background-color: #6A9C89;
+    z-index: 101;
+    transition: left 0.3s ease;
+    padding: 20px;
+}
+
+.sidebar .closeBtnNav {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.sidebar .nav-logo {
+    width: 100%;
+    text-align: center;
+    margin: 60px 0 20px;
+}
+
+.sidebar .nav-menu {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .nav-menu ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.sidebar a{
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /*Styles main*/
@@ -1223,7 +1275,46 @@ main .contact-section{
 
 /*Smartphones en portrait*/
 @media only screen and (max-width: 480px) {
-    
+    /*PAGE ACCUEIL*/
+
+    nav .nav-menu {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .nav-logo {
+        display: none;
+    }
+
+    nav .nav-contacts {
+        width: auto;
+    }
+
+    main .demarrage-section .demarrage-container{
+        flex-direction: column;
+    }
+
+    main .demarrage-section{
+        height: 100vh;
+    }
+
+
+
+
+
+
+
+
+    footer .container-footer{
+        flex-direction: column;
+    }
+
+    footer .container-footer .informations-footer{
+        flex-direction: column;
+    }
 }
 
 /*Smartphones en portrait*/
