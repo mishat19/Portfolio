@@ -12,8 +12,11 @@
   <body>
     <nav>
       <div class="nav-elements">
+        <div class="menu-icon" onclick="openSidebar()">
+            <img src="../images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu" class="logo-nav" style="width: 30px;">
+        </div>
         <div class="nav-element nav-logo">
-          <img src="../images/logo.png" alt="Logo de Mishat" class="logo-nav logo-tete">
+            <img src="../images/logo.png" alt="Logo de Mishat" class="logo-nav logo-tete">
         </div>
         <div class="nav-element nav-menu">
           <ul class="nav-menu-elements">
@@ -33,6 +36,23 @@
         </div>
       </div>
     </nav>
+    
+    <!-- SIDEBAR POUR MOBILE -->
+    <div id="sidebar" class="sidebar">
+        <span class="closeBtnNav" onclick="closeSidebar()">&#10005;</span>
+        <div class="nav-logo">
+            <img src="../images/logo.png" alt="Logo de Mishat" class="logo-nav logo-tete">
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-menu-elements">
+                <li class="menu-elements"><a href="../index.html">Accueil</a></li>
+                <li class="menu-elements"><a href="competences.html">Compétences</a></li>
+                <li class="menu-elements"><a href="projets.html">Projets</a></li>
+                <li class="menu-elements"><a href="about.html">A propos</a></li>
+                <li class="menu-elements"><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
 
     <main>
       <div class="container-main">
