@@ -1273,8 +1273,8 @@ main .contact-section{
 
 /**************************************MEDIA QUERIES**************************************/
 
-/*Smartphones en portrait*/
-@media only screen and (max-width: 480px) {
+/*Smartphones en portrait 480px*/
+@media only screen and (max-width: 767px) {
     body{
         font-size: 16px;
     }
@@ -1312,9 +1312,17 @@ main .contact-section{
         text-align: center;
     }
 
-    .demarrage-container .image-container .demarrage-image{
-        margin: 50px auto 0 auto;
+    .demarrage-container .image-container {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .demarrage-container .image-container .demarrage-image{
+        width: 100%;
+        max-width: 450px;
+        margin: 50px auto 0 auto;
     }
 
     .presentation-section .introduction{
@@ -1397,41 +1405,105 @@ main .contact-section{
         width: 100%;
     }
 
-        /*PAGE CONTACTS*/
+    /*PAGE CONTACTS*/
 
-        .contact-section .contact-article{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            width: 98%;
-        }
+    .contact-section .contact-article{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 98%;
+    }
 
-        .info-container{
-            margin-top: 50px;
-        }
+    .info-container{
+        margin-top: 50px;
+    }
 }
 
-/*Smartphones en portrait*/
+/*Smartphones en portrait
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     
-}
+}*/
 
 /*Tablettes en portrait*/
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    /*PAGE ACCUEIL*/
+
+    .texte-container .titre{
+        font-size: 2.8rem;
+    }
+
+    nav .nav-menu a{
+        font-size: 14px;
+    }
+
+    main .demarrage-section{
+        height: 55vh;
+    }
+
+    .presentation-section .introduction{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentation-section .introduction p{
+        margin-top: 20px;
+        font-size: 1.4rem;
+    }
+
+    main .main-sections{
+        text-align: center;
+    }
+
+    .formation-section .formation-container .categorie-container{
+        flex-direction: column;
+    }
+
+    .formation-container .categorie-container .categorie-texte{
+        font-size: 1.4rem;
+        text-align: center;
+        width: 90%;
+        margin: 10px 0 10px 0;
+    }
+
+    .formation-container .categorie-container .categorie-image{
+        width: 100%;
+    }
+
+    .categorie-container .categorie-image img{
+        width: 90%;
+    }
+
+    footer .container-footer .presentation-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .container-footer .informations-footer{
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    /*PAGE A PROPOS*/
+    .about-articles h3{
+        width: 100%;
+        text-align: center;
+    }
     
+    .formation .formation-liste .formation-item, .parcours-professionnel .parcours-professionnel-liste .parcours-item{
+        width: 100%;
+    }
 }
 
-/*Tablettes en paysage*/
+/*Tablettes en paysage
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
     
-}
+}*/
 
-/*Laptops*/
+/*Laptops
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
-    /*PAGE ACCUEIL*/
     
-}
+}*/
 
 /*Desktops*/
 @media only screen and (min-width: 1801px) {
