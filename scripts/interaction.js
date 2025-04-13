@@ -78,6 +78,26 @@ window.onload = function() {
         }
 
     }
+
+    //Fenêtre modale - Panneau latéral dynamique
+    const link = document.querySelector('.media-container a')
+    const image = document.querySelector('.media-container img')
+    const medias = document.querySelectorAll('.medias img');
+
+    medias.forEach(media => {
+        media.addEventListener('click', () => {
+            if(media.classList.contains('media1')){
+                link.href = `${media.src}`;
+                image.src = `${media.src}`;
+            } else if(media.classList.contains('media2')){
+                link.href = `${media.src}`;
+                image.src = `${media.src}`;
+            } else if(media.classList.contains('media3')){
+                link.href = `${media.src}`;
+                image.src = `${media.src}`;
+            }
+        })
+    })
 };
 
 function openSidebar() {
@@ -98,7 +118,7 @@ function panneauContenu(element){
     const objet = document.querySelector('.panneau-lateral .introduction p');
     const video = document.querySelector('.panneau-lateral .introduction video');
     const explications = document.querySelector('.panneau-lateral .explications');
-    const medias = document.querySelectorAll('.panneau-lateral .gallerie-medias .medias img');
+    const medias = document.querySelectorAll('.panneau-lateral .galerie-medias .medias img');
 
     if(element === "grattage"){
         titre.innerHTML = "Grattage";
@@ -216,7 +236,7 @@ function panneauContenu(element){
             }
         })
     } else{
-        titre.innerHTML = "Nouveau projet prochain";
+        titre.innerHTML = "Prochainement";
         objet.innerHTML = "Aucune information pour le moment";
 
         const source = video.querySelector('source');
@@ -284,7 +304,7 @@ function changeUpdateDate(element) {
     const dateElement = element.querySelector('.maj-auto');
     if (dateElement) {
         // Mettre à jour le contenu avec la date fixe
-        dateElement.innerHTML = '<b>13/04/2025 - 18h20</b>';
+        dateElement.innerHTML = '<b>14/04/2025 - 00h15</b>';
     }
 }
 
