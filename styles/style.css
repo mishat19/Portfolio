@@ -1504,6 +1504,7 @@ main .contact-section{
 
     .categorie-container .categorie-image img{
         width: 90%;
+        max-width: 800px;
     }
 
     footer .container-footer .presentation-footer{
@@ -1754,6 +1755,10 @@ main .contact-section{
 @media only screen and (min-width: 768px) and (max-width: 1800px) and (min-height: 500px) and (max-height: 970px) {
     main .demarrage-section {
         height: 60vh;
+    }
+
+    .formation-section .formation-container .categorie-container{
+        flex-direction: row;
     }
 }
 
