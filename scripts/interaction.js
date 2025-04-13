@@ -80,6 +80,19 @@ window.onload = function() {
     }
 };
 
+function openSidebar() {
+    document.getElementById("sidebar").style.display = "block";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.display = "none";
+}
+
+// Optionnel : fermer avec la touche Échap
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeSidebar();
+});
+
 function panneauContenu(element){
     const titre = document.querySelector('.panneau-lateral .introduction h2');
     if(element === "grattage"){
