@@ -1275,6 +1275,10 @@ main .contact-section{
 
 /*Smartphones en portrait*/
 @media only screen and (max-width: 480px) {
+    body{
+        font-size: 16px;
+    }
+
     /*PAGE ACCUEIL*/
 
     nav .nav-menu {
@@ -1295,18 +1299,56 @@ main .contact-section{
 
     main .demarrage-section .demarrage-container{
         flex-direction: column;
+        justify-content: inherit;
+        text-align: center;
     }
 
     main .demarrage-section{
         height: 100vh;
     }
 
+    .texte-container .texte{
+        width: 100%;
+        text-align: center;
+    }
 
+    .demarrage-container .image-container .demarrage-image{
+        margin: 50px auto 0 auto;
+        width: 100%;
+    }
 
+    .presentation-section .introduction{
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .presentation-section .introduction p{
+        margin-top: 20px;
+        font-size: 1.4rem;
+    }
 
+    main .main-sections{
+        text-align: center;
+    }
 
+    .formation-section .formation-container .categorie-container{
+        flex-direction: column;
+    }
 
+    .formation-container .categorie-container .categorie-texte{
+        font-size: 1.4rem;
+        text-align: center;
+        width: 90%;
+        margin: 10px 0 10px 0;
+    }
+
+    .formation-container .categorie-container .categorie-image{
+        width: 100%;
+    }
+
+    .categorie-container .categorie-image img{
+        width: 90%;
+    }
 
     footer .container-footer{
         flex-direction: column;
@@ -1315,6 +1357,59 @@ main .contact-section{
     footer .container-footer .informations-footer{
         flex-direction: column;
     }
+
+    footer .container-footer .presentation-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .container-footer .informations-footer .localisation, .container-footer .informations-footer .reseaux-sociaux{
+        margin-top: 20px;
+    }
+
+    footer .container-footer .informations-footer{
+        width: 100%;
+        align-items: center;
+    }
+
+    .localisation h4, .reseaux-sociaux h4{
+        text-align: center;
+    }
+
+    /*PAGE COMPETENCES*/
+
+    .langages-container .langage-item, .projets-elements .projet-item{
+        margin: 0 auto 20px auto;
+    }
+
+    /*PAGE PROJETS*/
+    .projets-section .projets-container{
+        width: auto;
+    }
+
+    /*PAGE A PROPOS*/
+    .about-articles h3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .formation .formation-liste .formation-item, .parcours-professionnel .parcours-professionnel-liste .parcours-item{
+        width: 100%;
+    }
+
+        /*PAGE CONTACTS*/
+
+        .contact-section .contact-article{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 98%;
+        }
+
+        .info-container{
+            margin-top: 50px;
+        }
 }
 
 /*Smartphones en portrait*/
