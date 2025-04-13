@@ -41,6 +41,8 @@ window.onload = function() {
         filtreLangage();
     });
 
+    //Panneau latéral
+
     const panneau = document.querySelector('.panneaux-container');
     const btnActivation = document.querySelectorAll('.details');
     const btnDesactivation = document.querySelector('.closeBtn');
@@ -50,6 +52,8 @@ window.onload = function() {
         activation.addEventListener('click', () => {
             panneau.classList.add('open');
             body.classList.add('no-scroll');
+            //alert(activation.id);
+            panneauContenu(activation.id);
         });
     })
 
@@ -57,7 +61,68 @@ window.onload = function() {
         panneau.classList.remove('open');
         body.classList.remove('no-scroll');
     });
+
+    //Panneau latéral dynamique
+    const modalContainer = document.querySelector('.visionnage');
+    const modalTriggers = document.querySelectorAll('.modal-trigger');
+    modalTriggers.forEach(modal => {modal.addEventListener('click', toggleModal)});
+
+    function toggleModal() {
+        if(modalContainer.classList.contains('active')) {
+            modalContainer.style.visibility = 'hidden';
+            modalContainer.classList.remove('active');
+        } else{
+            modalContainer.style.visibility = 'visible';
+            modalContainer.classList.add('active');
+            body.classList.add('no-scroll');
+        }
+
+    }
 };
+
+function openSidebar() {
+    document.getElementById("sidebar").style.display = "block";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.display = "none";
+}
+
+// Optionnel : fermer avec la touche Échap
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeSidebar();
+})
+
+function panneauContenu(element){
+    const titre = document.querySelector('.panneau-lateral .introduction h2');
+    const objet = document.querySelector('.panneau-lateral .introduction p');
+    const video = document.querySelector('.panneau-lateral .introduction video');
+    const explications = document.querySelector('.panneau-lateral .explications');
+    const medias = document.querySelectorAll('.panneau-lateral .gallerie-medias .medias img');
+
+    if(element === "grattage"){
+        titre.innerHTML = "Grattage";
+    } else if (element === "portfolio"){
+        titre.innerHTML = "Portfolio";
+        objet.innerHTML = "lorem20";
+
+        const source = video.querySelector('source');
+        source.src = '../images/outro.mp4';
+        video.load();
+
+        explications.innerHTML = "lorem80";
+
+        medias.forEach(media => {
+            if(media.classList.contains('media1')){
+                media.src = '../images/illustration-front-end.png';
+            } else{
+                media.src = '../images/illustration-back-end.png';
+            }
+        })
+    } else{
+        titre.innerHTML = "{Undefined}";
+    }
+}
 
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;
@@ -106,7 +171,7 @@ function changeUpdateDate(element) {
     const dateElement = element.querySelector('.maj-auto');
     if (dateElement) {
         // Mettre à jour le contenu avec la date fixe
-        dateElement.innerHTML = '<b>09/04/2025 - 22h00</b>';
+        dateElement.innerHTML = '<b>13/04/2025 - 18h20</b>';
     }
 }
 
