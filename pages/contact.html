@@ -7,7 +7,9 @@
     <title>Mathis Brongniart - Me contacter</title>
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="../scripts/interaction.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="../scripts/interaction.js"></script>
+    <script type="text/javascript" src="../scripts/send.js"></script>
   </head>
   <body>
     <nav>
@@ -66,15 +68,15 @@
               </div>
               <div class="form-group">
                 <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
+                <input type="text" id="nom" name="lname" required>
               </div>
               <div class="form-group">
                 <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" required>
+                <input type="text" id="prenom" name="fname" required>
               </div>
               <div class="form-group">
                 <label for="objet">Objet :</label>
-                <input type="text" id="objet" name="objet" required>
+                <input type="text" id="objet" name="subject" required>
               </div>
               <div class="form-group">
                 <label for="message">Message :</label>
@@ -92,7 +94,7 @@
           <div class="info-container">
             <div class="info-text">
               <p>Pour toute question ou démarche, je vous invite à m'envoyer un mail auquel je répondrais dans
-              les plus brefs délais. <br><b>[Fonctionnalité prochainement mise en place via l'API GMAIL]</b></p><br>
+              les plus brefs délais. <br><b>✅ Fonctionnalité disponible grâce à <i>EmailJs</i></b></p><br>
               <p>Je reste également joignable sur mes différents réseaux disponibles ci-dessous.</p>
             </div>
             <div class="map-container">
@@ -139,7 +141,7 @@
               </div>
               <div class="coordonnee">
                 <img src="../images/tel-logo.png" alt="Logo Tel" class="logo-coordonnee">
-                <p class="texte-logo">[BIENTÔT]</p>
+                <p class="texte-logo">A venir</p>
               </div>
               <div class="coordonnee">
                 <img src="../images/mail-logo.png" alt="Logo Mail" class="logo-coordonnee">
