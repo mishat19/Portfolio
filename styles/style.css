@@ -470,6 +470,7 @@ footer .container-footer .informations-footer {
 
 .container-reseaux .reseau .texte-logo{
     margin-left: 10px;
+    text-decoration: none;
 }
 
 .container-footer .informations-footer .localisation,
