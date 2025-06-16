@@ -933,7 +933,10 @@ main .visionnage.active{
 
 .modal .media-container img{
     display: block;
-    width: 80%;
+    min-width: 40%;
+    max-width: 80%;
+    min-height: auto;
+    max-height: 700px;
     margin: 0 auto;
 }
 
