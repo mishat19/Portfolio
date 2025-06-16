@@ -1068,12 +1068,21 @@ main .visionnage.active{
     margin-bottom: 100px;
 }
 
+.galerie-medias .medias{
+    display: flex;
+}
+
 .galerie-medias h3{
     margin-bottom: 15px;
 }
 
 .galerie-medias a{
     text-decoration: none;
+    margin-right: 10px;
+}
+
+.galerie-medias a:last-child{
+    margin-right: 0;
 }
 
 .galerie-medias .medias:last-child{

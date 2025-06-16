@@ -2,19 +2,39 @@ window.onload = function() {
         //MAJ date derniere modification
         changeUpdateDate();
 
-    // Page PROJETS - bars de progression
+    // Page PROJETS — bars de progression
     const element2 = document.querySelectorAll('.progress-bar-fond-projets .progress-bar-projets');
     element2.forEach(function(bar){
         animateProgressBarProjets(bar);
     })
 
-    // Page COMPETENCES - bars de progression
+    // Page COMPETENCES — bars de progression
     const progressBarElement = document.querySelectorAll('.percent');
     progressBarElement.forEach(function(progressBarElement){
         animateProgressBar(progressBarElement);
     });
 
-    // Page PROJETS - filtre de langages
+    //Panneau latéral
+    const panneau = document.querySelector('.panneaux-container');
+    const btnActivation = document.querySelectorAll('.details');
+    const btnDesactivation = document.querySelector('.closeBtn');
+    const body = document.body;
+
+    btnActivation.forEach(activation => {
+        activation.addEventListener('click', () => {
+            panneau.classList.add('open');
+            body.classList.add('no-scroll');
+            //alert(activation.id);
+            panneauContenu(activation.id);
+        });
+    })
+
+    btnDesactivation.addEventListener('click', () => {
+        panneau.classList.remove('open');
+        body.classList.remove('no-scroll');
+    });
+
+    // Page PROJETS — filtre de langages
     const langages = document.querySelectorAll('.filtre-container input[type="checkbox"]');
     const checkboxTout = langages[8]; // La case "Tout"
 
@@ -38,28 +58,7 @@ window.onload = function() {
         filtreLangage();
     });
 
-    //Panneau latéral
-
-    const panneau = document.querySelector('.panneaux-container');
-    const btnActivation = document.querySelectorAll('.details');
-    const btnDesactivation = document.querySelector('.closeBtn');
-    const body = document.body;
-
-    btnActivation.forEach(activation => {
-        activation.addEventListener('click', () => {
-            panneau.classList.add('open');
-            body.classList.add('no-scroll');
-            //alert(activation.id);
-            panneauContenu(activation.id);
-        });
-    })
-
-    btnDesactivation.addEventListener('click', () => {
-        panneau.classList.remove('open');
-        body.classList.remove('no-scroll');
-    });
-
-    //Panneau latéral dynamique
+    //Fenêtre modale — ouverture
     const modalContainer = document.querySelector('.visionnage');
     const modalTriggers = document.querySelectorAll('.modal-trigger');
     modalTriggers.forEach(modal => {modal.addEventListener('click', toggleModal)});
@@ -73,10 +72,9 @@ window.onload = function() {
             modalContainer.classList.add('active');
             body.classList.add('no-scroll');
         }
-
     }
 
-    //Fenêtre modale - Panneau latéral dynamique
+    //Fenêtre modale — Image agrandie
     const link = document.querySelector('.media-container a')
     const image = document.querySelector('.media-container img')
     const medias = document.querySelectorAll('.medias img');
@@ -130,15 +128,16 @@ function panneauContenu(element){
             " de <b>NSI</b> de Terminale et que j'ai pu réussir facilement à comprendre la mise en place d'un graphe via une <b>bibliothèque JS</b> et de la gestion des" +
             " probabilités qui n'étaient que des <b>calculs mathématiques</b>.";
 
-        medias.forEach(media => {
-            if(media.classList.contains('media1')){
-                media.src = '../images/grattage-image1.png';
-            } else if(media.classList.contains('media2')){
-                media.src = '../images/grattage-image2.png';
-            } else if(media.classList.contains('media3')){
+        const mediaSources = ['../images/grattage-image1.png', '../images/grattage-image2.png', '../images/grattage-image3.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
                 media.style.display = 'none';
             }
-        })
+        });
     } else if (element === "portfolio"){
         titre.innerHTML = "Portfolio";
         objet.innerHTML = "Le <b>Portfolio</b> a été mon tout premier projet en tant que <i>programmeur</i>. Ceci est la <b>deuxième version</b> de mon site." +
@@ -153,15 +152,16 @@ function panneauContenu(element){
             " à en apprendre tous les jours de ma <b>carrière d'étudiant</b> et de <b>futur programmeur</b> ! <br> J'ai essayé de mettre ce qui selon moi était le plus important afin que" +
             " vous puissiez me connaître et avoir un <b>premier aperçu</b> de mes capacités et du travail que je fournis.";
 
-        medias.forEach(media => {
-            if(media.classList.contains('media1')){
-                media.src = '../images/portfolio-image1.png';
-            } else if(media.classList.contains('media2')){
-                media.src = '../images/portfolio-image2.png';
-            } else if(media.classList.contains('media3')){
-                media.src = '../images/portfolio-image3.png';
+        const mediaSources = ['../images/portfolio-image1.png', '../images/portfolio-image2.png', '../images/portfolio-image3.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
+                media.style.display = 'none';
             }
-        })
+        });
     } else if (element === "messagerie"){
         titre.innerHTML = "Messagerie";
         objet.innerHTML = "Le <b>Back End</b> m'a très vite intéressé, car j'ai toujours eu un <i>esprit curieux</i> en quête de comprendre le <b>fonctionnement</b> des systèmes" +
@@ -176,15 +176,16 @@ function panneauContenu(element){
             " dans le but de découvrir et apprendre le PHP tout en développant une <b>application concrète</b>. <br> Après ce projet, je n'ai pas continué à m'exercer sur ce" +
             " langage, de ce fait, j'ai <i>perdu mes compétences</i> sur celui-ci bien que je souhaite m'y remettre incessamment sous peu.";
 
-        medias.forEach(media => {
-            if(media.classList.contains('media1')){
-                media.src = '../images/messagerie-image1.png';
-            } else if(media.classList.contains('media2')){
-                media.src = '../images/messagerie-image2.png';
-            } else if(media.classList.contains('media3')){
+        const mediaSources = ['../images/messagerie-image1.png', '../images/messagerie-image2.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
                 media.style.display = 'none';
             }
-        })
+        });
     } else if (element === "morpion"){
         titre.innerHTML = "Morpion";
         objet.innerHTML = "C'est un projet que j'avais quasiment oublié et qui a failli ne pas apparaître dans cette rubrique de mon site. Néanmoins, mon cerveau a" +
@@ -198,17 +199,18 @@ function panneauContenu(element){
         explications.innerHTML = "C'est un projet qui m'a été proposé par le professeur de NSI étant chargé du <b>Club Informatique</b> - qui était également mon" +
             " professeur en cours. J'ai tout de suite était alléché par ce projet puisqu'il traitait de langages que l'on ne voyait pas en cours : <b>SQL & PHP</b>, autrement" +
             " dis, des <b>langages Back End</b>. <br> Ce Morpion est donc jouable entre <b>2 joueurs</b> en <b><abbr title='Local Area Network'>LAN</abbr></b> ou sur un <b>seul ordinateur</b>" +
-            " (avec 2 navigateurs différents). Le projet n'a <b>aucune charte graphique</b> ni aucune esthétique; cela n'était pas le but du projet de coder du <b>CSS</b>.</b>";
+            " (avec 2 navigateurs différents). Le projet n'a <b>aucune charte graphique</b> ni aucune esthétique ; cela n'était pas le but du projet de coder du <b>CSS</b>.</b>";
 
-        medias.forEach(media => {
-            if(media.classList.contains('media1')){
-                media.src = '../images/morpion-image1.png';
-            } else if(media.classList.contains('media2')){
-                media.src = '../images/morpion-image2.png';
-            } else if(media.classList.contains('media3')){
-                media.src = '../images/morpion-image3.png';
+        const mediaSources = ['../images/morpion-image1.png', '../images/morpion-image2.png', '../images/morpion-image3.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
+                media.style.display = 'none';
             }
-        })
+        });
     } else if (element === "gps"){
         titre.innerHTML = "GPS";
         objet.innerHTML = "Dans le cadre d'une de nos <abbr title='Système Apprentissage Évalué'>SAE</abbr> de <b>Premier semestre</b>, nous avons dû réaliser un" +
@@ -225,15 +227,16 @@ function panneauContenu(element){
             " du <b>Pôle Nord</b>. <br> Cette première SAE de <b>BUT Informatique</b> m'aura permis de découvrir la manière de s'organiser derrière un <b>cahier des charges</b> précis et une <b>deadline</b>" +
             " imposée qui était relativement proche.";
 
-        medias.forEach(media => {
-            if(media.classList.contains('media1')){
-                media.src = '../images/gps-image1.png';
-            } else if(media.classList.contains('media2')){
-                media.src = '../images/gps-image2.png';
-            } else if(media.classList.contains('media3')){
+        const mediaSources = ['../images/gps-image1.png', '../images/gps-image2.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
                 media.style.display = 'none';
             }
-        })
+        });
     } else{
         titre.innerHTML = "Prochainement";
         objet.innerHTML = "Aucune information pour le moment";
@@ -244,15 +247,16 @@ function panneauContenu(element){
 
         explications.innerHTML = "Description à venir";
 
-        medias.forEach(media => {
-            if(media.classList.contains('media1')){
-                media.style.display = 'none';
-            } else if(media.classList.contains('media2')){
-                media.style.display = 'none';
-            } else if(media.classList.contains('media3')){
+        const mediaSources = [''];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
                 media.style.display = 'none';
             }
-        })
+        });
     }
 }
 
