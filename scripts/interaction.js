@@ -1,9 +1,6 @@
 window.onload = function() {
-    // Message MAJ
-    const element = document.getElementById('class');
-    if (element) {
-        changeUpdateDate(element);
-    }
+        //MAJ date derniere modification
+        changeUpdateDate();
 
     // Page PROJETS - bars de progression
     const element2 = document.querySelectorAll('.progress-bar-fond-projets .progress-bar-projets');
@@ -301,13 +298,12 @@ function animateProgressBarProjets(element) {
     }, 15); // Vitesse de l'animation (en millisecondes)
 }
 
-function changeUpdateDate(element) {
+function changeUpdateDate() {
     // Sélectionnez l'élément avec la classe 'maj-auto'
-    const dateElement = element.querySelector('.maj-auto');
-    if (dateElement) {
-        // Mettre à jour le contenu avec la date fixe
-        dateElement.innerHTML = '<b>14/04/2025 - 00h15</b>';
-    }
+    const dateElement = document.querySelector('.update-text');
+    // Mettre à jour le contenu avec la date fixe
+    //dateElement.innerHTML = '<b>14/04/2025 - 00h15</b>';
+    dateElement.innerHTML = "Mis à jour : 16/06/2025";
 }
 
 function filtreLangage() {
