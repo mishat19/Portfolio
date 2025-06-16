@@ -81,16 +81,8 @@ window.onload = function() {
 
     medias.forEach(media => {
         media.addEventListener('click', () => {
-            if(media.classList.contains('media1')){
-                link.href = `${media.src}`;
-                image.src = `${media.src}`;
-            } else if(media.classList.contains('media2')){
-                link.href = `${media.src}`;
-                image.src = `${media.src}`;
-            } else if(media.classList.contains('media3')){
-                link.href = `${media.src}`;
-                image.src = `${media.src}`;
-            }
+            link.href = `${media.src}`;
+            image.src = `${media.src}`;
         })
     })
 };
