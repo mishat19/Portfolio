@@ -315,7 +315,7 @@ function panneauContenu(element){
         explications.innerHTML = "Nous avions pour objectif principal de mettre en place l'<b>algorithme de Dijkstra</b> pour calculer l'itinéraire le plus cours et le renvoyer dans " +
             "un code clair dans l'invite de commandes. Ensuite, nous devions ajouter des fonctions supplémentaires. Nous avons choisi une option <abbr title='Personnes à Mobilité Réduite'>PMR</abbr> ainsi " +
             "qu'une <b>option confort</b> qui consiste à calculer le chemin le plus court qui a le <b>taux de fréquentation</b> le plus faible. <br>" +
-            "Cette SAE était très intéressante car il était intéressant d'appliquer nos notions de <b>cours de graphes</b> avec ceux de <b>C#</b> dans un cas aussi concret que ces <b>fonctionnalités " +
+            "Cette SAE était très intéressante car nous avons pu appliquer nos notions de <b>cours de graphes</b> avec ceux de <b>C#</b> dans un cas aussi concret que ces <b>fonctionnalités " +
             "de transports en communs</b>.";
 
         const mediaSources = ['../images/dijkstra-image1.png', '../images/dijkstra-image2.png', '../images/dijkstra-image3.png'];
