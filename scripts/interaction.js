@@ -36,7 +36,7 @@ window.onload = function() {
 
     // Page PROJETS — filtre de langages
     const langages = document.querySelectorAll('.filtre-container input[type="checkbox"]');
-    const checkboxTout = langages[8]; // La case "Tout"
+    const checkboxTout = document.querySelector('input[value="tout"]');
 
     langages.forEach((langage, index) => {
         langage.addEventListener('change', () => {
@@ -213,9 +213,9 @@ function panneauContenu(element){
         });
     } else if (element === "gps"){
         titre.innerHTML = "GPS";
-        objet.innerHTML = "Dans le cadre d'une de nos <abbr title='Système Apprentissage Évalué'>SAE</abbr> de <b>Premier semestre</b>, nous avons dû réaliser un" +
-            " <b>système GPS</b> qui calcule des distances à <b>vol d'oiseau</b> en <b>langage C</b>. Nous étions en équipe de <b>4 personnes</b> bien que j'ai été " +
-            " le seul du groupe à réaliser cette SAE.";
+        objet.innerHTML = "Dans le cadre d'une de nos <abbr title='Système Apprentissage Évalué'>SAE</abbr> du <b>Premier semestre</b>, nous avons dû réaliser un " +
+            "<b>système GPS</b> qui calcule des distances à <b>vol d'oiseau</b> en <b>langage C</b>. Nous étions en équipe de <b>4 personnes</b> bien que j'ai été " +
+            "le seul du groupe à réaliser cette SAE.";
 
         const source = video.querySelector('source');
         source.src = '../images/gps-video.mp4';
@@ -228,6 +228,132 @@ function panneauContenu(element){
             " imposée qui était relativement proche.";
 
         const mediaSources = ['../images/gps-image1.png', '../images/gps-image2.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
+                media.style.display = 'none';
+            }
+        });
+    } else if (element === "site-art"){
+        titre.innerHTML = "Site d'Art";
+        objet.innerHTML = "Dans le cadre d'une de nos <abbr title='Système Apprentissage Évalué'>SAE</abbr> du <b>Premier semestre</b>, nous avions comme projet de" +
+            "créer un <b>site web</b> original en suivant les cours que nous avions reçus durant le semestre.";
+
+        const source = video.querySelector('source');
+        source.src = '../images/art-video.mp4';
+        video.load();
+
+        explications.innerHTML = "J'ai voulu orienter mes idées vers le domaine que j'aime énormément qu'est l'<b>art</b>. Pour cela, j'ai choisi une palette de <b>couleurs" +
+            "pastels</b> avec un fort contrastes avec les <b>couleurs vives</b> des catégories. Ce ne sont pas les couleurs les plus harmonieuses, mais ce n'était pas mon but précis. Enfin, " +
+            "le site s'axe sur des <b>caroussels</b> pour afficher les différents tableaux afin d'avoir un rendu propre et professionnel.";
+
+        const mediaSources = ['../images/art-image1.png', '../images/art-image2.png', '../images/art-image3.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
+                media.style.display = 'none';
+            }
+        });
+    } else if (element === "gestion-contacts5"){
+        titre.innerHTML = "Gestion Contacts";
+        objet.innerHTML = "Dans le cadre d'une de nos <abbr title='Système Apprentissage Évalué'>SAE</abbr> de <b>Premier semestre</b>, nous avons dû réaliser un" +
+            " <b>système GPS</b> qui calcule des distances à <b>vol d'oiseau</b> en <b>langage C</b>. Nous étions en équipe de <b>4 personnes</b> bien que j'ai été " +
+            "le seul du groupe à réaliser cette SAE.";
+
+        const source = video.querySelector('source');
+        source.src = '../images/gps-video.mp4';
+        video.load();
+
+        explications.innerHTML = "Ce programme permet d'afficher toutes les données d'un <b>fichier CSV</b> dans un affichage structuré. Avec cela, nous avons dû" +
+            "mettre en place <b>différents systèmes</b> notamment l'ajout, la suppression et la modification d'une ville. Puis, les <b>systèmes plus complexes</b> avec particulièrement :" +
+            " la distance entre deux villes, la distance par rapport à une ville donnée par l'utilisateur (à l'instar de <b>Google Maps</b>) et enfin par rapport à la distance" +
+            " du <b>Pôle Nord</b>. <br> Cette première SAE de <b>BUT Informatique</b> m'aura permis de découvrir la manière de s'organiser derrière un <b>cahier des charges</b> précis et une <b>deadline</b>" +
+            " imposée qui était relativement proche.";
+
+        const mediaSources = ['../images/gps-image1.png', '../images/gps-image2.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
+                media.style.display = 'none';
+            }
+        });
+    } else if (element === "calcul-checksum"){
+        titre.innerHTML = "Calcul Checksum";
+        objet.innerHTML = "Dans le cadre d'une de nos <abbr title='Système Apprentissage Évalué'>SAE</abbr> du <b>Second semestre</b>, nous avons dû réaliser un" +
+            " <b>calculateur de checksum</b> qui trouve le checksum dans une <b>trame IP</b> en <b>langage C#</b>. Nous étions une équipe de <b>3 personnes</b> pour s'occuper" +
+            "du code.";
+
+        const source = video.querySelector('source');
+        source.src = '../images/checksum-video.mp4';
+        video.load();
+
+        explications.innerHTML = "Ce programme affiche dans une case spécifique le <b>checksum</b> qui est trouvé dans une <b>trame IP</b> fournie dans un label. " +
+            "La seconde consigne était de produire un affichage clair avec une interface <b>WinForms</b> harmonieuse. Cette SAE était secondaire dans ce semestre en termes " +
+            "de difficulté.";
+
+        const mediaSources = ['../images/checksum-image1.png', '../images/checksum-image2.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
+                media.style.display = 'none';
+            }
+        });
+    } else if (element === "dijkstra"){
+        titre.innerHTML = "Itinéraire Dijkstra";
+        objet.innerHTML = "Dans cette autre <abbr title='Système Apprentissage Évalué'>SAE</abbr> du <b>Second semestre</b>, nous avons dû réaliser un" +
+            " <b>calcul d'itinéraire</b> qui renvoie le <b>plus court chemin</b> d'un graphe en <b>langage C#</b>. Nous étions en équipe de <b>3 personnes</b> pour se charger " +
+            "de la solution.";
+
+        const source = video.querySelector('source');
+        source.src = '../images/dijkstra-video.mp4';
+        video.load();
+
+        explications.innerHTML = "Nous avions pour objectif principal de mettre en place l'<b>algorithme de Dijkstra</b> pour calculer l'itinéraire le plus cours et le renvoyer dans " +
+            "un code clair dans l'invite de commandes. Ensuite, nous devions ajouter des fonctions supplémentaires. Nous avons choisi une option <abbr title='Personnes à Mobilité Réduite'>PMR</abbr> ainsi " +
+            "qu'une <b>option confort</b> qui consiste à calculer le chemin le plus court qui a le <b>taux de fréquentation</b> le plus faible. <br>" +
+            "Cette SAE était très intéressante car il était intéressant d'appliquer nos notions de <b>cours de graphes</b> avec ceux de <b>C#</b> dans un cas aussi concret que ces <b>fonctionnalités " +
+            "de transports en communs</b>.";
+
+        const mediaSources = ['../images/dijkstra-image1.png', '../images/dijkstra-image2.png', '../images/dijkstra-image3.png'];
+
+        medias.forEach((media, i) => {
+            if (mediaSources[i]) {
+                media.style.display = 'block';
+                media.src = `../images/${mediaSources[i]}`;
+            } else {
+                media.style.display = 'none';
+            }
+        });
+    } else if (element === "metro"){
+        titre.innerHTML = "Application métro";
+        objet.innerHTML = "Ceci est la <abbr title='Système Apprentissage Évalué'>SAE</abbr> principale du <b>Second semestre</b>. Elle nous aura pris des <b>semaines de travail</b> au vu de la quantité d'informations " +
+            "et de données à prendre en compte et à <b>implémenter</b>.";
+
+        const source = video.querySelector('source');
+        source.src = '../images/metro-video.mp4';
+        video.load();
+
+        explications.innerHTML = "Nous avions pour consignes d'implémenter dans une version <b>C# et WindowForms</b> les SAEs de base de données ainsi que celle de l'" +
+            "<b>Itinéraire Checksum</b> que vous pouvez retrouver dans mes projets précédents. Concernant la base de données, elle consistait à avoir toutes nos tables pour gérer le <b>stockage des données</b> " +
+            "et nous permettre de mettre en pratique nos <b>connaissances du SQL</b> que nous avons travaillé sur l'année. Pour la seconde, il n'était pas nécessaire d'ajouter les différentes fonctionnalités supplémentaires comme " +
+            "la gestion des PMR ou l'option confort dont nous avions eu l'idée (voir projet <b>Itinéraire Checksum</b>). <br>" +
+            "Pour cette SAE, j'ai principalement travaillé sur le <b>code</b> ainsi que l'intéraction avec le serveur via les <b>requêtes SQL</b>. L'interface graphique a été entièrement réalisée par un membre de notre équipe. Il est " +
+            "à noter que le programme est loin d'être parfait, il comporte des oublies ainsi que des problèmes mineurs, mais je suis fier d'avoir pu <b>apprendre</b> énormément de choses grâce à ce projet. Que ce soit concernant le <b>C#, SCRUM, " +
+            "WinForms</b> et d'autres choses. C'était un projet complet qui a permis de <b>mettre en pratique</b> tout notre savoir.";
+
+        const mediaSources = ['../images/metro-image1.png', '../images/metro-image2.png', '../images/metro-image3.png'];
 
         medias.forEach((media, i) => {
             if (mediaSources[i]) {
